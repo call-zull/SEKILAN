@@ -1,0 +1,18 @@
+{
+    "sourceFile": "config/sanctum.php",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1712109082851,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1712109082851,
+            "name": "Commit-0",
+            "content": "<?php\n\nuse Laravel\\Sanctum\\Sanctum;\n\nreturn [\n\n    /*\n    |--------------------------------------------------------------------------\n    | Stateful Domains\n    |--------------------------------------------------------------------------\n    |\n    | Requests from the following domains / hosts will receive stateful API\n    | authentication cookies. Typically, these should include your local\n    | and production domains which access your API via a frontend SPA.\n    |\n    */\n\n    'stateful' => explode(',', env('SANCTUM_STATEFUL_DOMAINS', sprintf(\n        '%s%s',\n        'localhost,localhost:3000,127.0.0.1,127.0.0.1:8000,::1',\n        Sanctum::currentApplicationUrlWithPort()\n    ))),\n\n    /*\n    |--------------------------------------------------------------------------\n    | Sanctum Guards\n    |--------------------------------------------------------------------------\n    |\n    | This array contains the authentication guards that will be checked when\n    | Sanctum is trying to authenticate a request. If none of these guards\n    | are able to authenticate the request, Sanctum will use the bearer\n    | token that's present on an incoming request for authentication.\n    |\n    */\n\n    'guard' => ['web'],\n\n    /*\n    |--------------------------------------------------------------------------\n    | Expiration Minutes\n    |--------------------------------------------------------------------------\n    |\n    | This value controls the number of minutes until an issued token will be\n    | considered expired. This will override any values set in the token's\n    | \"expires_at\" attribute, but first-party sessions are not affected.\n    |\n    */\n\n    'expiration' => null,\n\n    /*\n    |--------------------------------------------------------------------------\n    | Token Prefix\n    |--------------------------------------------------------------------------\n    |\n    | Sanctum can prefix new tokens in order to take advantage of numerous\n    | security scanning initiatives maintained by open source platforms\n    | that notify developers if they commit tokens into repositories.\n    |\n    | See: https://docs.github.com/en/code-security/secret-scanning/about-secret-scanning\n    |\n    */\n\n    'token_prefix' => env('SANCTUM_TOKEN_PREFIX', ''),\n\n    /*\n    |--------------------------------------------------------------------------\n    | Sanctum Middleware\n    |--------------------------------------------------------------------------\n    |\n    | When authenticating your first-party SPA with Sanctum you may need to\n    | customize some of the middleware Sanctum uses while processing the\n    | request. You may change the middleware listed below as required.\n    |\n    */\n\n    'middleware' => [\n        'authenticate_session' => Laravel\\Sanctum\\Http\\Middleware\\AuthenticateSession::class,\n        'encrypt_cookies' => Illuminate\\Cookie\\Middleware\\EncryptCookies::class,\n        'validate_csrf_token' => Illuminate\\Foundation\\Http\\Middleware\\ValidateCsrfToken::class,\n    ],\n];"
+        }
+    ]
+}

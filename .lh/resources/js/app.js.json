@@ -1,0 +1,30 @@
+{
+    "sourceFile": "resources/js/app.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 3,
+            "patches": [
+                {
+                    "date": 1706751855241,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1706753940858,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,2 +1,8 @@\n import './bootstrap';\n import 'flowbite';\n+\n+import Alpine from 'alpinejs'\n+ \n+window.Alpine = Alpine\n+ \n+Alpine.start()\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1707381766028,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,5 +4,26 @@\n import Alpine from 'alpinejs'\n  \n window.Alpine = Alpine\n  \n-Alpine.start()\n\\ No newline at end of file\n+Alpine.start()\n+\n+window.onscroll = function() {\n+    const header = document.querySelector('header');\n+    const fixedNav = header.offsetTop;\n+\n+    if(window.pageYOffset > fixedNav ){\n+        header.classList.add('navbar-fixed');\n+    }else{\n+        header.classList.remove('navbar-fixed');\n+    }\n+}\n+\n+\n+//hamburger\n+const hamburger = document.querySelector('#hamburger');\n+const navMenu = document.querySelector('#nav-menu');\n+\n+hamburger.addEventListener('click', function() {\n+    hamburger.classList.toggle('hamburger-active');\n+    navMenu.classList.toggle('hidden');\n+})\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1707381786389,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,24 +6,4 @@\n window.Alpine = Alpine\n  \n Alpine.start()\n \n-window.onscroll = function() {\n-    const header = document.querySelector('header');\n-    const fixedNav = header.offsetTop;\n-\n-    if(window.pageYOffset > fixedNav ){\n-        header.classList.add('navbar-fixed');\n-    }else{\n-        header.classList.remove('navbar-fixed');\n-    }\n-}\n-\n-\n-//hamburger\n-const hamburger = document.querySelector('#hamburger');\n-const navMenu = document.querySelector('#nav-menu');\n-\n-hamburger.addEventListener('click', function() {\n-    hamburger.classList.toggle('hamburger-active');\n-    navMenu.classList.toggle('hidden');\n-})\n\\ No newline at end of file\n"
+                }
+            ],
+            "date": 1706751855241,
+            "name": "Commit-0",
+            "content": "import './bootstrap';\nimport 'flowbite';\n"
+        }
+    ]
+}

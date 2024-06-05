@@ -1,0 +1,30 @@
+{
+    "sourceFile": "resources/views/components/foot.blade.php",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 3,
+            "patches": [
+                {
+                    "date": 1715734878714,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1715736555320,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,2 +1,5 @@\n+<script>\n+    feather.replace();\n+  </script>\n </body>\n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1715744257695,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,5 @@\n <script>\n     feather.replace();\n-  </script>\n+</script>\n </body>\n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1715745080605,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,4 +1,6 @@\n+<script type=\"module\" src=\"https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js\"></script>\n+<script nomodule src=\"https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js\"></script>\n <script>\n     feather.replace();\n </script>\n </body>\n"
+                }
+            ],
+            "date": 1715734878714,
+            "name": "Commit-0",
+            "content": "</body>\n</html>"
+        }
+    ]
+}

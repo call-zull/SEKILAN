@@ -1,0 +1,710 @@
+{
+    "sourceFile": "resources/views/login.blade.php",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 173,
+            "patches": [
+                {
+                    "date": 1715133488090,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1715133864047,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,8 +10,9 @@\n     {{-- logo --}}\r\n     <div>\r\n         <div class=\"bg-white\">\r\n             <img src=\"{{ asset('logo/mobil_sekilan.png') }}\" alt=\"\" class=\"w-12\">\r\n-          </div>\r\n+            <p class=\"text-pink-500\">kkkk</p>\r\n+        </div>\r\n     </div>\r\n </body>\r\n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1715133984435,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,8 +3,9 @@\n <head>\r\n     <meta charset=\"UTF-8\">\r\n     <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n     <meta http-equiv=\"X-UA-Compatible\" content=\"ie=edge\">\r\n+    @vite(['resources/css/app.css', 'resources/js/app.js'])\r\n     <title>Login | SEKILAN</title>\r\n </head>\r\n <body>\r\n     {{-- logo --}}\r\n"
+                },
+                {
+                    "date": 1715134009968,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,8 +3,14 @@\n <head>\r\n     <meta charset=\"UTF-8\">\r\n     <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n     <meta http-equiv=\"X-UA-Compatible\" content=\"ie=edge\">\r\n+    {{-- font --}}\r\n+    <link rel=\"preconnect\" href=\"https://fonts.googleapis.com\">\r\n+    <link rel=\"preconnect\" href=\"https://fonts.gstatic.com\" crossorigin>\r\n+    <link\r\n+        href=\"https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap\"\r\n+        rel=\"stylesheet\">\r\n     @vite(['resources/css/app.css', 'resources/js/app.js'])\r\n     <title>Login | SEKILAN</title>\r\n </head>\r\n <body>\r\n"
+                },
+                {
+                    "date": 1715134130693,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,9 +17,8 @@\n     {{-- logo --}}\r\n     <div>\r\n         <div class=\"bg-white\">\r\n             <img src=\"{{ asset('logo/mobil_sekilan.png') }}\" alt=\"\" class=\"w-12\">\r\n-            <p class=\"text-pink-500\">kkkk</p>\r\n         </div>\r\n     </div>\r\n </body>\r\n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1715134147728,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,9 +16,9 @@\n <body>\r\n     {{-- logo --}}\r\n     <div>\r\n         <div class=\"bg-white\">\r\n-            <img src=\"{{ asset('logo/mobil_sekilan.png') }}\" alt=\"\" class=\"w-12\">\r\n+            <img src=\"{{ asset('logo/mobil_sekilan.png') }}\" alt=\"\" class=\"w-28\">\r\n         </div>\r\n     </div>\r\n </body>\r\n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1715134157530,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,9 +16,9 @@\n <body>\r\n     {{-- logo --}}\r\n     <div>\r\n         <div class=\"bg-white\">\r\n-            <img src=\"{{ asset('logo/mobil_sekilan.png') }}\" alt=\"\" class=\"w-28\">\r\n+            <img src=\"{{ asset('logo/mobil_sekilan.png') }}\" alt=\"\" class=\"w-36\">\r\n         </div>\r\n     </div>\r\n </body>\r\n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1715134170983,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,9 +16,9 @@\n <body>\r\n     {{-- logo --}}\r\n     <div>\r\n         <div class=\"bg-white\">\r\n-            <img src=\"{{ asset('logo/mobil_sekilan.png') }}\" alt=\"\" class=\"w-36\">\r\n+            <img src=\"{{ asset('logo/mobil_sekilan.png') }}\" alt=\"\" class=\"w-36 flex justify-center\">\r\n         </div>\r\n     </div>\r\n </body>\r\n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1715134224809,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,9 +16,9 @@\n <body>\r\n     {{-- logo --}}\r\n     <div>\r\n         <div class=\"bg-white\">\r\n-            <img src=\"{{ asset('logo/mobil_sekilan.png') }}\" alt=\"\" class=\"w-36 flex justify-center\">\r\n+            <img src=\"{{ asset('logo/mobil_sekilan.png') }}\" alt=\"\" class=\"w-36 flex items-center\">\r\n         </div>\r\n     </div>\r\n </body>\r\n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1715134232809,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,9 +16,9 @@\n <body>\r\n     {{-- logo --}}\r\n     <div>\r\n         <div class=\"bg-white\">\r\n-            <img src=\"{{ asset('logo/mobil_sekilan.png') }}\" alt=\"\" class=\"w-36 flex items-center\">\r\n+            <img src=\"{{ asset('logo/mobil_sekilan.png') }}\" alt=\"\" class=\"w-36 flex items-center justify-center\">\r\n         </div>\r\n     </div>\r\n </body>\r\n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1715134239602,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,9 +15,9 @@\n </head>\r\n <body>\r\n     {{-- logo --}}\r\n     <div>\r\n-        <div class=\"bg-white\">\r\n+        <div class=\"bg-white w-full\">\r\n             <img src=\"{{ asset('logo/mobil_sekilan.png') }}\" alt=\"\" class=\"w-36 flex items-center justify-center\">\r\n         </div>\r\n     </div>\r\n </body>\r\n"
+                },
+                {
+                    "date": 1715134258590,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,10 +15,10 @@\n </head>\r\n <body>\r\n     {{-- logo --}}\r\n     <div>\r\n-        <div class=\"bg-white w-full\">\r\n-            <img src=\"{{ asset('logo/mobil_sekilan.png') }}\" alt=\"\" class=\"w-36 flex items-center justify-center\">\r\n+        <div class=\"bg-white w-full flex\">\r\n+            <img src=\"{{ asset('logo/mobil_sekilan.png') }}\" alt=\"\" class=\"w-36 items-center justify-center\">\r\n         </div>\r\n     </div>\r\n </body>\r\n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1715134268928,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,10 +15,10 @@\n </head>\r\n <body>\r\n     {{-- logo --}}\r\n     <div>\r\n-        <div class=\"bg-white w-full flex\">\r\n-            <img src=\"{{ asset('logo/mobil_sekilan.png') }}\" alt=\"\" class=\"w-36 items-center justify-center\">\r\n+        <div class=\"bg-white w-full flex  items-center justify-center\">\r\n+            <img src=\"{{ asset('logo/mobil_sekilan.png') }}\" alt=\"\" class=\"w-36\">\r\n         </div>\r\n     </div>\r\n </body>\r\n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1715134275468,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,9 +15,9 @@\n </head>\r\n <body>\r\n     {{-- logo --}}\r\n     <div>\r\n-        <div class=\"bg-white w-full flex  items-center justify-center\">\r\n+        <div class=\"bg-white w-full flex  items-center\">\r\n             <img src=\"{{ asset('logo/mobil_sekilan.png') }}\" alt=\"\" class=\"w-36\">\r\n         </div>\r\n     </div>\r\n </body>\r\n"
+                },
+                {
+                    "date": 1715134290125,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,9 +15,9 @@\n </head>\r\n <body>\r\n     {{-- logo --}}\r\n     <div>\r\n-        <div class=\"bg-white w-full flex  items-center\">\r\n+        <div class=\"bg-white w-full flex place-content-center\">\r\n             <img src=\"{{ asset('logo/mobil_sekilan.png') }}\" alt=\"\" class=\"w-36\">\r\n         </div>\r\n     </div>\r\n </body>\r\n"
+                },
+                {
+                    "date": 1715134311345,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,9 +15,9 @@\n </head>\r\n <body>\r\n     {{-- logo --}}\r\n     <div>\r\n-        <div class=\"bg-white w-full flex place-content-center\">\r\n+        <div class=\"bg-white w-full flex justify-center\">\r\n             <img src=\"{{ asset('logo/mobil_sekilan.png') }}\" alt=\"\" class=\"w-36\">\r\n         </div>\r\n     </div>\r\n </body>\r\n"
+                },
+                {
+                    "date": 1715134329747,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,9 +15,9 @@\n </head>\r\n <body>\r\n     {{-- logo --}}\r\n     <div>\r\n-        <div class=\"bg-white w-full flex justify-center\">\r\n+        <div class=\"bg-white w-full flex justify-center mt-11\">\r\n             <img src=\"{{ asset('logo/mobil_sekilan.png') }}\" alt=\"\" class=\"w-36\">\r\n         </div>\r\n     </div>\r\n </body>\r\n"
+                },
+                {
+                    "date": 1715134337471,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,9 +15,9 @@\n </head>\r\n <body>\r\n     {{-- logo --}}\r\n     <div>\r\n-        <div class=\"bg-white w-full flex justify-center mt-11\">\r\n+        <div class=\"bg-white w-full flex justify-center mt-20\">\r\n             <img src=\"{{ asset('logo/mobil_sekilan.png') }}\" alt=\"\" class=\"w-36\">\r\n         </div>\r\n     </div>\r\n </body>\r\n"
+                },
+                {
+                    "date": 1715134669551,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,12 +13,16 @@\n     @vite(['resources/css/app.css', 'resources/js/app.js'])\r\n     <title>Login | SEKILAN</title>\r\n </head>\r\n <body>\r\n-    {{-- logo --}}\r\n     <div>\r\n+        {{-- logo --}}\r\n         <div class=\"bg-white w-full flex justify-center mt-20\">\r\n             <img src=\"{{ asset('logo/mobil_sekilan.png') }}\" alt=\"\" class=\"w-36\">\r\n         </div>\r\n+        {{-- nama --}}\r\n+        <div>\r\n+            <h1 class=\"font-poppins \">SEKILAN</h1>\r\n+        </div>\r\n     </div>\r\n </body>\r\n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1715134679922,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,9 +20,9 @@\n             <img src=\"{{ asset('logo/mobil_sekilan.png') }}\" alt=\"\" class=\"w-36\">\r\n         </div>\r\n         {{-- nama --}}\r\n         <div>\r\n-            <h1 class=\"font-poppins \">SEKILAN</h1>\r\n+            <h1 class=\"font-poppins text-intiHijau\">SEKILAN</h1>\r\n         </div>\r\n     </div>\r\n </body>\r\n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1715134805607,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,12 +17,13 @@\n     <div>\r\n         {{-- logo --}}\r\n         <div class=\"bg-white w-full flex justify-center mt-20\">\r\n             <img src=\"{{ asset('logo/mobil_sekilan.png') }}\" alt=\"\" class=\"w-36\">\r\n+            <h1 class=\"font-poppins text-intiHijau\">SEKILAN</h1>\r\n         </div>\r\n         {{-- nama --}}\r\n         <div>\r\n-            <h1 class=\"font-poppins text-intiHijau\">SEKILAN</h1>\r\n+            \r\n         </div>\r\n     </div>\r\n </body>\r\n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1715134819341,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,9 +15,9 @@\n </head>\r\n <body>\r\n     <div>\r\n         {{-- logo --}}\r\n-        <div class=\"bg-white w-full flex justify-center mt-20\">\r\n+        <div class=\"bg-white w-full flex justify-center items-center mt-20\">\r\n             <img src=\"{{ asset('logo/mobil_sekilan.png') }}\" alt=\"\" class=\"w-36\">\r\n             <h1 class=\"font-poppins text-intiHijau\">SEKILAN</h1>\r\n         </div>\r\n         {{-- nama --}}\r\n"
+                },
+                {
+                    "date": 1715134835268,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,15 +15,15 @@\n </head>\r\n <body>\r\n     <div>\r\n         {{-- logo --}}\r\n-        <div class=\"bg-white w-full flex justify-center items-center mt-20\">\r\n+        <div class=\"bg-white w-full flex justify-center mt-20\">\r\n             <img src=\"{{ asset('logo/mobil_sekilan.png') }}\" alt=\"\" class=\"w-36\">\r\n-            <h1 class=\"font-poppins text-intiHijau\">SEKILAN</h1>\r\n+            <div>\r\n+                <h1 class=\"font-poppins text-intiHijau\">SEKILAN</h1>\r\n+            </div>\r\n         </div>\r\n         {{-- nama --}}\r\n-        <div>\r\n-            \r\n-        </div>\r\n+        \r\n     </div>\r\n </body>\r\n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1715134845187,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,13 +17,12 @@\n     <div>\r\n         {{-- logo --}}\r\n         <div class=\"bg-white w-full flex justify-center mt-20\">\r\n             <img src=\"{{ asset('logo/mobil_sekilan.png') }}\" alt=\"\" class=\"w-36\">\r\n-            <div>\r\n-                <h1 class=\"font-poppins text-intiHijau\">SEKILAN</h1>\r\n-            </div>\r\n         </div>\r\n         {{-- nama --}}\r\n-        \r\n+        <div>\r\n+            <h1 class=\"font-poppins text-intiHijau\">SEKILAN</h1>\r\n+        </div>\r\n     </div>\r\n </body>\r\n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1715134860585,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,9 +19,9 @@\n         <div class=\"bg-white w-full flex justify-center mt-20\">\r\n             <img src=\"{{ asset('logo/mobil_sekilan.png') }}\" alt=\"\" class=\"w-36\">\r\n         </div>\r\n         {{-- nama --}}\r\n-        <div>\r\n+        <div class=\"w-full justify-center\">\r\n             <h1 class=\"font-poppins text-intiHijau\">SEKILAN</h1>\r\n         </div>\r\n     </div>\r\n </body>\r\n"
+                },
+                {
+                    "date": 1715134870983,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,9 +20,9 @@\n             <img src=\"{{ asset('logo/mobil_sekilan.png') }}\" alt=\"\" class=\"w-36\">\r\n         </div>\r\n         {{-- nama --}}\r\n         <div class=\"w-full justify-center\">\r\n-            <h1 class=\"font-poppins text-intiHijau\">SEKILAN</h1>\r\n+            <h1 class=\"font-poppins text-intiHijau font-semibold\">SEKILAN</h1>\r\n         </div>\r\n     </div>\r\n </body>\r\n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1715134910091,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,9 +20,9 @@\n             <img src=\"{{ asset('logo/mobil_sekilan.png') }}\" alt=\"\" class=\"w-36\">\r\n         </div>\r\n         {{-- nama --}}\r\n         <div class=\"w-full justify-center\">\r\n-            <h1 class=\"font-poppins text-intiHijau font-semibold\">SEKILAN</h1>\r\n+            <h1 class=\"font-poppins text-intiHijau font-semibold text-[24]\">SEKILAN</h1>\r\n         </div>\r\n     </div>\r\n </body>\r\n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1715134918971,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,9 +20,9 @@\n             <img src=\"{{ asset('logo/mobil_sekilan.png') }}\" alt=\"\" class=\"w-36\">\r\n         </div>\r\n         {{-- nama --}}\r\n         <div class=\"w-full justify-center\">\r\n-            <h1 class=\"font-poppins text-intiHijau font-semibold text-[24]\">SEKILAN</h1>\r\n+            <h1 class=\"font-poppins text-intiHijau font-semibold text-[24px]\">SEKILAN</h1>\r\n         </div>\r\n     </div>\r\n </body>\r\n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1715134939171,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,9 +20,9 @@\n             <img src=\"{{ asset('logo/mobil_sekilan.png') }}\" alt=\"\" class=\"w-36\">\r\n         </div>\r\n         {{-- nama --}}\r\n         <div class=\"w-full justify-center\">\r\n-            <h1 class=\"font-poppins text-intiHijau font-semibold text-[24px]\">SEKILAN</h1>\r\n+            <h1 class=\"font-poppins text-intiHijau font-semibold text-3xl\">SEKILAN</h1>\r\n         </div>\r\n     </div>\r\n </body>\r\n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1715134947575,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,9 +20,9 @@\n             <img src=\"{{ asset('logo/mobil_sekilan.png') }}\" alt=\"\" class=\"w-36\">\r\n         </div>\r\n         {{-- nama --}}\r\n         <div class=\"w-full justify-center\">\r\n-            <h1 class=\"font-poppins text-intiHijau font-semibold text-3xl\">SEKILAN</h1>\r\n+            <h1 class=\"font-poppins text-intiHijau font-semibold text-2xl\">SEKILAN</h1>\r\n         </div>\r\n     </div>\r\n </body>\r\n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1715134966650,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,9 +19,9 @@\n         <div class=\"bg-white w-full flex justify-center mt-20\">\r\n             <img src=\"{{ asset('logo/mobil_sekilan.png') }}\" alt=\"\" class=\"w-36\">\r\n         </div>\r\n         {{-- nama --}}\r\n-        <div class=\"w-full justify-center\">\r\n+        <div class=\"w-full items-center\">\r\n             <h1 class=\"font-poppins text-intiHijau font-semibold text-2xl\">SEKILAN</h1>\r\n         </div>\r\n     </div>\r\n </body>\r\n"
+                },
+                {
+                    "date": 1715134977074,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,9 +19,9 @@\n         <div class=\"bg-white w-full flex justify-center mt-20\">\r\n             <img src=\"{{ asset('logo/mobil_sekilan.png') }}\" alt=\"\" class=\"w-36\">\r\n         </div>\r\n         {{-- nama --}}\r\n-        <div class=\"w-full items-center\">\r\n+        <div class=\"w-full place-content-center\">\r\n             <h1 class=\"font-poppins text-intiHijau font-semibold text-2xl\">SEKILAN</h1>\r\n         </div>\r\n     </div>\r\n </body>\r\n"
+                },
+                {
+                    "date": 1715134988900,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,9 +19,9 @@\n         <div class=\"bg-white w-full flex justify-center mt-20\">\r\n             <img src=\"{{ asset('logo/mobil_sekilan.png') }}\" alt=\"\" class=\"w-36\">\r\n         </div>\r\n         {{-- nama --}}\r\n-        <div class=\"w-full place-content-center\">\r\n+        <div class=\"w-full place-items-center\">\r\n             <h1 class=\"font-poppins text-intiHijau font-semibold text-2xl\">SEKILAN</h1>\r\n         </div>\r\n     </div>\r\n </body>\r\n"
+                },
+                {
+                    "date": 1715134996412,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,9 +19,9 @@\n         <div class=\"bg-white w-full flex justify-center mt-20\">\r\n             <img src=\"{{ asset('logo/mobil_sekilan.png') }}\" alt=\"\" class=\"w-36\">\r\n         </div>\r\n         {{-- nama --}}\r\n-        <div class=\"w-full place-items-center\">\r\n+        <div class=\"w-full \">\r\n             <h1 class=\"font-poppins text-intiHijau font-semibold text-2xl\">SEKILAN</h1>\r\n         </div>\r\n     </div>\r\n </body>\r\n"
+                },
+                {
+                    "date": 1715135002909,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,9 +19,9 @@\n         <div class=\"bg-white w-full flex justify-center mt-20\">\r\n             <img src=\"{{ asset('logo/mobil_sekilan.png') }}\" alt=\"\" class=\"w-36\">\r\n         </div>\r\n         {{-- nama --}}\r\n-        <div class=\"w-full \">\r\n+        <div class=\"w-full bg-black\">\r\n             <h1 class=\"font-poppins text-intiHijau font-semibold text-2xl\">SEKILAN</h1>\r\n         </div>\r\n     </div>\r\n </body>\r\n"
+                },
+                {
+                    "date": 1715135055520,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,9 +15,9 @@\n </head>\r\n <body>\r\n     <div>\r\n         {{-- logo --}}\r\n-        <div class=\"bg-white w-full flex justify-center mt-20\">\r\n+        <div class=\"bg-blue-400 w-full flex justify-center mt-20\">\r\n             <img src=\"{{ asset('logo/mobil_sekilan.png') }}\" alt=\"\" class=\"w-36\">\r\n         </div>\r\n         {{-- nama --}}\r\n         <div class=\"w-full bg-black\">\r\n"
+                },
+                {
+                    "date": 1715135067674,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,9 +19,9 @@\n         <div class=\"bg-blue-400 w-full flex justify-center mt-20\">\r\n             <img src=\"{{ asset('logo/mobil_sekilan.png') }}\" alt=\"\" class=\"w-36\">\r\n         </div>\r\n         {{-- nama --}}\r\n-        <div class=\"w-full bg-black\">\r\n+        <div class=\"w-full bg-black mt-2\">\r\n             <h1 class=\"font-poppins text-intiHijau font-semibold text-2xl\">SEKILAN</h1>\r\n         </div>\r\n     </div>\r\n </body>\r\n"
+                },
+                {
+                    "date": 1715135083719,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,9 +19,9 @@\n         <div class=\"bg-blue-400 w-full flex justify-center mt-20\">\r\n             <img src=\"{{ asset('logo/mobil_sekilan.png') }}\" alt=\"\" class=\"w-36\">\r\n         </div>\r\n         {{-- nama --}}\r\n-        <div class=\"w-full bg-black mt-2\">\r\n+        <div class=\"w-full flex justify-center bg-black mt-2\">\r\n             <h1 class=\"font-poppins text-intiHijau font-semibold text-2xl\">SEKILAN</h1>\r\n         </div>\r\n     </div>\r\n </body>\r\n"
+                },
+                {
+                    "date": 1715135092462,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,9 +19,9 @@\n         <div class=\"bg-blue-400 w-full flex justify-center mt-20\">\r\n             <img src=\"{{ asset('logo/mobil_sekilan.png') }}\" alt=\"\" class=\"w-36\">\r\n         </div>\r\n         {{-- nama --}}\r\n-        <div class=\"w-full flex justify-center bg-black mt-2\">\r\n+        <div class=\"w-full flex justify-center bg-black mt-1\">\r\n             <h1 class=\"font-poppins text-intiHijau font-semibold text-2xl\">SEKILAN</h1>\r\n         </div>\r\n     </div>\r\n </body>\r\n"
+                },
+                {
+                    "date": 1715135111501,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,13 +15,13 @@\n </head>\r\n <body>\r\n     <div>\r\n         {{-- logo --}}\r\n-        <div class=\"bg-blue-400 w-full flex justify-center mt-20\">\r\n+        <div class=\"w-full flex justify-center mt-20\">\r\n             <img src=\"{{ asset('logo/mobil_sekilan.png') }}\" alt=\"\" class=\"w-36\">\r\n         </div>\r\n         {{-- nama --}}\r\n-        <div class=\"w-full flex justify-center bg-black mt-1\">\r\n+        <div class=\"w-full flex justify-center mt-1\">\r\n             <h1 class=\"font-poppins text-intiHijau font-semibold text-2xl\">SEKILAN</h1>\r\n         </div>\r\n     </div>\r\n </body>\r\n"
+                },
+                {
+                    "date": 1715135149078,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,9 +16,9 @@\n <body>\r\n     <div>\r\n         {{-- logo --}}\r\n         <div class=\"w-full flex justify-center mt-20\">\r\n-            <img src=\"{{ asset('logo/mobil_sekilan.png') }}\" alt=\"\" class=\"w-36\">\r\n+            <img src=\"{{ asset('logo/mobil_sekilan.png') }}\" alt=\"logo-sekilan\" class=\"w-36\">\r\n         </div>\r\n         {{-- nama --}}\r\n         <div class=\"w-full flex justify-center mt-1\">\r\n             <h1 class=\"font-poppins text-intiHijau font-semibold text-2xl\">SEKILAN</h1>\r\n"
+                },
+                {
+                    "date": 1715135233776,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,9 +16,9 @@\n <body>\r\n     <div>\r\n         {{-- logo --}}\r\n         <div class=\"w-full flex justify-center mt-20\">\r\n-            <img src=\"{{ asset('logo/mobil_sekilan.png') }}\" alt=\"logo-sekilan\" class=\"w-36\">\r\n+            <img src=\"{{ asset('logo/mobil_sekilan.png') }}\" alt=\"logo-sekilan\" class=\"w-44\">\r\n         </div>\r\n         {{-- nama --}}\r\n         <div class=\"w-full flex justify-center mt-1\">\r\n             <h1 class=\"font-poppins text-intiHijau font-semibold text-2xl\">SEKILAN</h1>\r\n"
+                },
+                {
+                    "date": 1715136239030,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -22,7 +22,13 @@\n         {{-- nama --}}\r\n         <div class=\"w-full flex justify-center mt-1\">\r\n             <h1 class=\"font-poppins text-intiHijau font-semibold text-2xl\">SEKILAN</h1>\r\n         </div>\r\n+\r\n+        {{-- form --}}\r\n+        {{-- judul form --}}\r\n+        <div class=\"\">\r\n+            <h2 class=\"font-poppins text-intiHijau font-semibold text-xl\">Email</h2>\r\n+        </div>\r\n     </div>\r\n </body>\r\n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1715136263588,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,9 +25,9 @@\n         </div>\r\n \r\n         {{-- form --}}\r\n         {{-- judul form --}}\r\n-        <div class=\"\">\r\n+        <div class=\"bg-red-400 mt-5\">\r\n             <h2 class=\"font-poppins text-intiHijau font-semibold text-xl\">Email</h2>\r\n         </div>\r\n     </div>\r\n </body>\r\n"
+                },
+                {
+                    "date": 1715136273343,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,9 +25,9 @@\n         </div>\r\n \r\n         {{-- form --}}\r\n         {{-- judul form --}}\r\n-        <div class=\"bg-red-400 mt-5\">\r\n+        <div class=\"bg-red-400 mt-5 p-2\">\r\n             <h2 class=\"font-poppins text-intiHijau font-semibold text-xl\">Email</h2>\r\n         </div>\r\n     </div>\r\n </body>\r\n"
+                },
+                {
+                    "date": 1715136288971,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,9 +25,9 @@\n         </div>\r\n \r\n         {{-- form --}}\r\n         {{-- judul form --}}\r\n-        <div class=\"bg-red-400 mt-5 p-2\">\r\n+        <div class=\"bg-red-400 mt-5 px-4\">\r\n             <h2 class=\"font-poppins text-intiHijau font-semibold text-xl\">Email</h2>\r\n         </div>\r\n     </div>\r\n </body>\r\n"
+                },
+                {
+                    "date": 1715136370657,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,9 +25,9 @@\n         </div>\r\n \r\n         {{-- form --}}\r\n         {{-- judul form --}}\r\n-        <div class=\"bg-red-400 mt-5 px-4\">\r\n+        <div class=\"bg-red-400 mt-5 px-4 font-bold text-2xl\">\r\n             <h2 class=\"font-poppins text-intiHijau font-semibold text-xl\">Email</h2>\r\n         </div>\r\n     </div>\r\n </body>\r\n"
+                },
+                {
+                    "date": 1715136389643,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,10 +25,10 @@\n         </div>\r\n \r\n         {{-- form --}}\r\n         {{-- judul form --}}\r\n-        <div class=\"bg-red-400 mt-5 px-4 font-bold text-2xl\">\r\n-            <h2 class=\"font-poppins text-intiHijau font-semibold text-xl\">Email</h2>\r\n+        <div class=\"bg-red-400 mt-5 px-4\">\r\n+            <h2 class=\"font-poppins text-intiHijau font-bold text-xl\">Email</h2>\r\n         </div>\r\n     </div>\r\n </body>\r\n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1715136396960,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,9 +25,9 @@\n         </div>\r\n \r\n         {{-- form --}}\r\n         {{-- judul form --}}\r\n-        <div class=\"bg-red-400 mt-5 px-4\">\r\n+        <div class=\"mt-5 px-4\">\r\n             <h2 class=\"font-poppins text-intiHijau font-bold text-xl\">Email</h2>\r\n         </div>\r\n     </div>\r\n </body>\r\n"
+                },
+                {
+                    "date": 1715136408130,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,9 +25,9 @@\n         </div>\r\n \r\n         {{-- form --}}\r\n         {{-- judul form --}}\r\n-        <div class=\"mt-5 px-4\">\r\n+        <div class=\"mt-8 px-4\">\r\n             <h2 class=\"font-poppins text-intiHijau font-bold text-xl\">Email</h2>\r\n         </div>\r\n     </div>\r\n </body>\r\n"
+                },
+                {
+                    "date": 1715136418843,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,9 +25,9 @@\n         </div>\r\n \r\n         {{-- form --}}\r\n         {{-- judul form --}}\r\n-        <div class=\"mt-8 px-4\">\r\n+        <div class=\"mt-10 px-4\">\r\n             <h2 class=\"font-poppins text-intiHijau font-bold text-xl\">Email</h2>\r\n         </div>\r\n     </div>\r\n </body>\r\n"
+                },
+                {
+                    "date": 1715136768104,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -28,7 +28,11 @@\n         {{-- judul form --}}\r\n         <div class=\"mt-10 px-4\">\r\n             <h2 class=\"font-poppins text-intiHijau font-bold text-xl\">Email</h2>\r\n         </div>\r\n+        {{-- body form --}}\r\n+        <div>\r\n+            <input type=\"email\" name=\"email\" id=\"email\" placeholder=\"Masukkan Email\" class=\"\">\r\n+        </div>\r\n     </div>\r\n </body>\r\n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1715136852128,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -29,9 +29,9 @@\n         <div class=\"mt-10 px-4\">\r\n             <h2 class=\"font-poppins text-intiHijau font-bold text-xl\">Email</h2>\r\n         </div>\r\n         {{-- body form --}}\r\n-        <div>\r\n+        <div class=\"w-full\">\r\n             <input type=\"email\" name=\"email\" id=\"email\" placeholder=\"Masukkan Email\" class=\"\">\r\n         </div>\r\n     </div>\r\n </body>\r\n"
+                },
+                {
+                    "date": 1715136887331,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -30,9 +30,9 @@\n             <h2 class=\"font-poppins text-intiHijau font-bold text-xl\">Email</h2>\r\n         </div>\r\n         {{-- body form --}}\r\n         <div class=\"w-full\">\r\n-            <input type=\"email\" name=\"email\" id=\"email\" placeholder=\"Masukkan Email\" class=\"\">\r\n+            <input type=\"email\" name=\"email\" id=\"email\" placeholder=\"Masukkan Email\" class=\"w-full\">\r\n         </div>\r\n     </div>\r\n </body>\r\n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1715136897074,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -30,9 +30,9 @@\n             <h2 class=\"font-poppins text-intiHijau font-bold text-xl\">Email</h2>\r\n         </div>\r\n         {{-- body form --}}\r\n         <div class=\"w-full\">\r\n-            <input type=\"email\" name=\"email\" id=\"email\" placeholder=\"Masukkan Email\" class=\"w-full\">\r\n+            <input type=\"email\" name=\"email\" id=\"email\" placeholder=\"Masukkan Email\" class=\"w-80%\">\r\n         </div>\r\n     </div>\r\n </body>\r\n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1715136904667,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -30,9 +30,9 @@\n             <h2 class=\"font-poppins text-intiHijau font-bold text-xl\">Email</h2>\r\n         </div>\r\n         {{-- body form --}}\r\n         <div class=\"w-full\">\r\n-            <input type=\"email\" name=\"email\" id=\"email\" placeholder=\"Masukkan Email\" class=\"w-80%\">\r\n+            <input type=\"email\" name=\"email\" id=\"email\" placeholder=\"Masukkan Email\" class=\"w-95%\">\r\n         </div>\r\n     </div>\r\n </body>\r\n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1715136916574,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -30,9 +30,9 @@\n             <h2 class=\"font-poppins text-intiHijau font-bold text-xl\">Email</h2>\r\n         </div>\r\n         {{-- body form --}}\r\n         <div class=\"w-full\">\r\n-            <input type=\"email\" name=\"email\" id=\"email\" placeholder=\"Masukkan Email\" class=\"w-95%\">\r\n+            <input type=\"email\" name=\"email\" id=\"email\" placeholder=\"Masukkan Email\" class=\"w-[95%]\">\r\n         </div>\r\n     </div>\r\n </body>\r\n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1715137007312,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -29,9 +29,9 @@\n         <div class=\"mt-10 px-4\">\r\n             <h2 class=\"font-poppins text-intiHijau font-bold text-xl\">Email</h2>\r\n         </div>\r\n         {{-- body form --}}\r\n-        <div class=\"w-full\">\r\n+        <div class=\"w-full px-2\">\r\n             <input type=\"email\" name=\"email\" id=\"email\" placeholder=\"Masukkan Email\" class=\"w-[95%]\">\r\n         </div>\r\n     </div>\r\n </body>\r\n"
+                },
+                {
+                    "date": 1715137033746,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -30,9 +30,9 @@\n             <h2 class=\"font-poppins text-intiHijau font-bold text-xl\">Email</h2>\r\n         </div>\r\n         {{-- body form --}}\r\n         <div class=\"w-full px-2\">\r\n-            <input type=\"email\" name=\"email\" id=\"email\" placeholder=\"Masukkan Email\" class=\"w-[95%]\">\r\n+            <input type=\"email\" name=\"email\" id=\"email\" placeholder=\"Masukkan Email\" class=\"w-full\">\r\n         </div>\r\n     </div>\r\n </body>\r\n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1715137071662,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -30,9 +30,9 @@\n             <h2 class=\"font-poppins text-intiHijau font-bold text-xl\">Email</h2>\r\n         </div>\r\n         {{-- body form --}}\r\n         <div class=\"w-full px-2\">\r\n-            <input type=\"email\" name=\"email\" id=\"email\" placeholder=\"Masukkan Email\" class=\"w-full\">\r\n+            <input type=\"email\" name=\"email\" id=\"email\" placeholder=\"Masukkan Email\" class=\"w-full border-none\">\r\n         </div>\r\n     </div>\r\n </body>\r\n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1715137099826,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -30,9 +30,9 @@\n             <h2 class=\"font-poppins text-intiHijau font-bold text-xl\">Email</h2>\r\n         </div>\r\n         {{-- body form --}}\r\n         <div class=\"w-full px-2\">\r\n-            <input type=\"email\" name=\"email\" id=\"email\" placeholder=\"Masukkan Email\" class=\"w-full border-none\">\r\n+            <input type=\"email\" name=\"email\" id=\"email\" placeholder=\"Masukkan Email\" class=\"w-full border-none border-b-2\">\r\n         </div>\r\n     </div>\r\n </body>\r\n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1715137118766,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -30,9 +30,9 @@\n             <h2 class=\"font-poppins text-intiHijau font-bold text-xl\">Email</h2>\r\n         </div>\r\n         {{-- body form --}}\r\n         <div class=\"w-full px-2\">\r\n-            <input type=\"email\" name=\"email\" id=\"email\" placeholder=\"Masukkan Email\" class=\"w-full border-none border-b-2\">\r\n+            <input type=\"email\" name=\"email\" id=\"email\" placeholder=\"Masukkan Email\" class=\"w-full border-none border-b-2 border-intiHijau\">\r\n         </div>\r\n     </div>\r\n </body>\r\n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1715137237732,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -30,9 +30,9 @@\n             <h2 class=\"font-poppins text-intiHijau font-bold text-xl\">Email</h2>\r\n         </div>\r\n         {{-- body form --}}\r\n         <div class=\"w-full px-2\">\r\n-            <input type=\"email\" name=\"email\" id=\"email\" placeholder=\"Masukkan Email\" class=\"w-full border-none border-b-2 border-intiHijau\">\r\n+            <input type=\"email\" name=\"email\" id=\"email\" placeholder=\"Masukkan Email\" class=\"w-full border-b-2 border-intiHijau\">\r\n         </div>\r\n     </div>\r\n </body>\r\n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1715137276485,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -30,9 +30,9 @@\n             <h2 class=\"font-poppins text-intiHijau font-bold text-xl\">Email</h2>\r\n         </div>\r\n         {{-- body form --}}\r\n         <div class=\"w-full px-2\">\r\n-            <input type=\"email\" name=\"email\" id=\"email\" placeholder=\"Masukkan Email\" class=\"w-full border-b-2 border-intiHijau\">\r\n+            <input type=\"email\" name=\"email\" id=\"email\" placeholder=\"Masukkan Email\" class=\"w-full outline-none border-b-2 border-intiHijau\">\r\n         </div>\r\n     </div>\r\n </body>\r\n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1715137313733,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -30,9 +30,9 @@\n             <h2 class=\"font-poppins text-intiHijau font-bold text-xl\">Email</h2>\r\n         </div>\r\n         {{-- body form --}}\r\n         <div class=\"w-full px-2\">\r\n-            <input type=\"email\" name=\"email\" id=\"email\" placeholder=\"Masukkan Email\" class=\"w-full outline-none border-b-2 border-intiHijau\">\r\n+            <input type=\"email\" name=\"email\" id=\"email\" placeholder=\"Masukkan Email\" class=\"w-full outline-none border-b-2 border-b-intiHijau\">\r\n         </div>\r\n     </div>\r\n </body>\r\n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1715137332004,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -30,9 +30,9 @@\n             <h2 class=\"font-poppins text-intiHijau font-bold text-xl\">Email</h2>\r\n         </div>\r\n         {{-- body form --}}\r\n         <div class=\"w-full px-2\">\r\n-            <input type=\"email\" name=\"email\" id=\"email\" placeholder=\"Masukkan Email\" class=\"w-full outline-none border-b-2 border-b-intiHijau\">\r\n+            <input type=\"email\" name=\"email\" id=\"email\" placeholder=\"Masukkan Email\" class=\"w-full border-none border-b-2 border-b-intiHijau\">\r\n         </div>\r\n     </div>\r\n </body>\r\n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1715137349670,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -30,9 +30,9 @@\n             <h2 class=\"font-poppins text-intiHijau font-bold text-xl\">Email</h2>\r\n         </div>\r\n         {{-- body form --}}\r\n         <div class=\"w-full px-2\">\r\n-            <input type=\"email\" name=\"email\" id=\"email\" placeholder=\"Masukkan Email\" class=\"w-full border-none border-b-2 border-b-intiHijau\">\r\n+            <input type=\"email\" name=\"email\" id=\"email\" placeholder=\"Masukkan Email\" class=\"w-full border-none outline-b-2 border-b-intiHijau\">\r\n         </div>\r\n     </div>\r\n </body>\r\n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1715137377796,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -30,9 +30,9 @@\n             <h2 class=\"font-poppins text-intiHijau font-bold text-xl\">Email</h2>\r\n         </div>\r\n         {{-- body form --}}\r\n         <div class=\"w-full px-2\">\r\n-            <input type=\"email\" name=\"email\" id=\"email\" placeholder=\"Masukkan Email\" class=\"w-full border-none outline-b-2 border-b-intiHijau\">\r\n+            <input type=\"email\" name=\"email\" id=\"email\" placeholder=\"Masukkan Email\" class=\"w-full border-r-0 outline-b-2 border-b-intiHijau\">\r\n         </div>\r\n     </div>\r\n </body>\r\n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1715137401213,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -30,9 +30,9 @@\n             <h2 class=\"font-poppins text-intiHijau font-bold text-xl\">Email</h2>\r\n         </div>\r\n         {{-- body form --}}\r\n         <div class=\"w-full px-2\">\r\n-            <input type=\"email\" name=\"email\" id=\"email\" placeholder=\"Masukkan Email\" class=\"w-full border-r-0 outline-b-2 border-b-intiHijau\">\r\n+            <input type=\"email\" name=\"email\" id=\"email\" placeholder=\"Masukkan Email\" class=\"w-full border-x-0 outline-b-2 border-b-intiHijau\">\r\n         </div>\r\n     </div>\r\n </body>\r\n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1715137418050,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -30,9 +30,9 @@\n             <h2 class=\"font-poppins text-intiHijau font-bold text-xl\">Email</h2>\r\n         </div>\r\n         {{-- body form --}}\r\n         <div class=\"w-full px-2\">\r\n-            <input type=\"email\" name=\"email\" id=\"email\" placeholder=\"Masukkan Email\" class=\"w-full border-x-0 outline-b-2 border-b-intiHijau\">\r\n+            <input type=\"email\" name=\"email\" id=\"email\" placeholder=\"Masukkan Email\" class=\"w-full border-x-0 border-t-0 outline-b-2 border-b-intiHijau\">\r\n         </div>\r\n     </div>\r\n </body>\r\n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1715137489370,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -30,9 +30,9 @@\n             <h2 class=\"font-poppins text-intiHijau font-bold text-xl\">Email</h2>\r\n         </div>\r\n         {{-- body form --}}\r\n         <div class=\"w-full px-2\">\r\n-            <input type=\"email\" name=\"email\" id=\"email\" placeholder=\"Masukkan Email\" class=\"w-full border-x-0 border-t-0 outline-b-2 border-b-intiHijau\">\r\n+            <input type=\"email\" name=\"email\" id=\"email\" placeholder=\"Masukkan Email\" class=\"w-full focus:outline-none border-x-0 border-t-0 outline-b-2 border-b-intiHijau\">\r\n         </div>\r\n     </div>\r\n </body>\r\n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1715137503761,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -30,9 +30,9 @@\n             <h2 class=\"font-poppins text-intiHijau font-bold text-xl\">Email</h2>\r\n         </div>\r\n         {{-- body form --}}\r\n         <div class=\"w-full px-2\">\r\n-            <input type=\"email\" name=\"email\" id=\"email\" placeholder=\"Masukkan Email\" class=\"w-full focus:outline-none border-x-0 border-t-0 outline-b-2 border-b-intiHijau\">\r\n+            <input type=\"email\" name=\"email\" id=\"email\" placeholder=\"Masukkan Email\" class=\"w-full focus:border-none border-x-0 border-t-0 outline-b-2 border-b-intiHijau\">\r\n         </div>\r\n     </div>\r\n </body>\r\n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1715137593088,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -30,9 +30,9 @@\n             <h2 class=\"font-poppins text-intiHijau font-bold text-xl\">Email</h2>\r\n         </div>\r\n         {{-- body form --}}\r\n         <div class=\"w-full px-2\">\r\n-            <input type=\"email\" name=\"email\" id=\"email\" placeholder=\"Masukkan Email\" class=\"w-full focus:border-none border-x-0 border-t-0 outline-b-2 border-b-intiHijau\">\r\n+            <input type=\"email\" name=\"email\" id=\"email\" placeholder=\"Masukkan Email\" class=\"w-full focus:outline-none focus-visible:outline-none border-x-0 border-t-0 outline-b-2 border-b-intiHijau\">\r\n         </div>\r\n     </div>\r\n </body>\r\n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1715137600735,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -30,9 +30,9 @@\n             <h2 class=\"font-poppins text-intiHijau font-bold text-xl\">Email</h2>\r\n         </div>\r\n         {{-- body form --}}\r\n         <div class=\"w-full px-2\">\r\n-            <input type=\"email\" name=\"email\" id=\"email\" placeholder=\"Masukkan Email\" class=\"w-full focus:outline-none focus-visible:outline-none border-x-0 border-t-0 outline-b-2 border-b-intiHijau\">\r\n+            <input type=\"email\" name=\"email\" id=\"email\" placeholder=\"Masukkan Email\" class=\"w-full focus:outline-none border-x-0 border-t-0 outline-b-2 border-b-intiHijau\">\r\n         </div>\r\n     </div>\r\n </body>\r\n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1715137623131,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -30,9 +30,9 @@\n             <h2 class=\"font-poppins text-intiHijau font-bold text-xl\">Email</h2>\r\n         </div>\r\n         {{-- body form --}}\r\n         <div class=\"w-full px-2\">\r\n-            <input type=\"email\" name=\"email\" id=\"email\" placeholder=\"Masukkan Email\" class=\"w-full focus:outline-none border-x-0 border-t-0 outline-b-2 border-b-intiHijau\">\r\n+            <input type=\"email\" name=\"email\" id=\"email\" placeholder=\"Masukkan Email\" class=\"w-full focus:outline-none!important border-x-0 border-t-0 outline-b-2 border-b-intiHijau\">\r\n         </div>\r\n     </div>\r\n </body>\r\n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1715137630232,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -30,9 +30,9 @@\n             <h2 class=\"font-poppins text-intiHijau font-bold text-xl\">Email</h2>\r\n         </div>\r\n         {{-- body form --}}\r\n         <div class=\"w-full px-2\">\r\n-            <input type=\"email\" name=\"email\" id=\"email\" placeholder=\"Masukkan Email\" class=\"w-full focus:outline-none!important border-x-0 border-t-0 outline-b-2 border-b-intiHijau\">\r\n+            <input type=\"email\" name=\"email\" id=\"email\" placeholder=\"Masukkan Email\" class=\"w-full focus:outline-none !important border-x-0 border-t-0 outline-b-2 border-b-intiHijau\">\r\n         </div>\r\n     </div>\r\n </body>\r\n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1715137645883,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -30,9 +30,9 @@\n             <h2 class=\"font-poppins text-intiHijau font-bold text-xl\">Email</h2>\r\n         </div>\r\n         {{-- body form --}}\r\n         <div class=\"w-full px-2\">\r\n-            <input type=\"email\" name=\"email\" id=\"email\" placeholder=\"Masukkan Email\" class=\"w-full focus:outline-none !important border-x-0 border-t-0 outline-b-2 border-b-intiHijau\">\r\n+            <input type=\"email\" name=\"email\" id=\"email\" placeholder=\"Masukkan Email\" class=\"w-full !focus:outline-none border-x-0 border-t-0 outline-b-2 border-b-intiHijau\">\r\n         </div>\r\n     </div>\r\n </body>\r\n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1715137815950,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -30,9 +30,9 @@\n             <h2 class=\"font-poppins text-intiHijau font-bold text-xl\">Email</h2>\r\n         </div>\r\n         {{-- body form --}}\r\n         <div class=\"w-full px-2\">\r\n-            <input type=\"email\" name=\"email\" id=\"email\" placeholder=\"Masukkan Email\" class=\"w-full !focus:outline-none border-x-0 border-t-0 outline-b-2 border-b-intiHijau\">\r\n+            <input type=\"email\" name=\"email\" id=\"email\" placeholder=\"Masukkan Email\" class=\"w-full active:outline-none border-x-0 border-t-0 outline-b-2 border-b-intiHijau\">\r\n         </div>\r\n     </div>\r\n </body>\r\n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1715137911928,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -30,9 +30,9 @@\n             <h2 class=\"font-poppins text-intiHijau font-bold text-xl\">Email</h2>\r\n         </div>\r\n         {{-- body form --}}\r\n         <div class=\"w-full px-2\">\r\n-            <input type=\"email\" name=\"email\" id=\"email\" placeholder=\"Masukkan Email\" class=\"w-full active:outline-none border-x-0 border-t-0 outline-b-2 border-b-intiHijau\">\r\n+            <input type=\"email\" name=\"email\" id=\"email\" placeholder=\"Masukkan Email\" class=\"w-full border-transparent focus:border-transparent focus:ring-0 border-x-0 border-t-0 outline-b-2 border-b-intiHijau\">\r\n         </div>\r\n     </div>\r\n </body>\r\n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1715137943333,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -30,9 +30,9 @@\n             <h2 class=\"font-poppins text-intiHijau font-bold text-xl\">Email</h2>\r\n         </div>\r\n         {{-- body form --}}\r\n         <div class=\"w-full px-2\">\r\n-            <input type=\"email\" name=\"email\" id=\"email\" placeholder=\"Masukkan Email\" class=\"w-full border-transparent focus:border-transparent focus:ring-0 border-x-0 border-t-0 outline-b-2 border-b-intiHijau\">\r\n+            <input type=\"email\" name=\"email\" id=\"email\" placeholder=\"Masukkan Email\" class=\"w-full focus:border-transparent focus:ring-0 border-x-0 border-t-0 outline-b-2 border-b-intiHijau\">\r\n         </div>\r\n     </div>\r\n </body>\r\n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1715137984072,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -30,9 +30,9 @@\n             <h2 class=\"font-poppins text-intiHijau font-bold text-xl\">Email</h2>\r\n         </div>\r\n         {{-- body form --}}\r\n         <div class=\"w-full px-2\">\r\n-            <input type=\"email\" name=\"email\" id=\"email\" placeholder=\"Masukkan Email\" class=\"w-full focus:border-transparent focus:ring-0 border-x-0 border-t-0 outline-b-2 border-b-intiHijau\">\r\n+            <input type=\"email\" name=\"email\" id=\"email\" placeholder=\"Masukkan Email\" class=\"w-full focus:border-transparent focus:ring-0 focus:border-b-intiHijau border-x-0 border-t-0 outline-b-2 border-b-intiHijau\">\r\n         </div>\r\n     </div>\r\n </body>\r\n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1715137996811,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -29,9 +29,9 @@\n         <div class=\"mt-10 px-4\">\r\n             <h2 class=\"font-poppins text-intiHijau font-bold text-xl\">Email</h2>\r\n         </div>\r\n         {{-- body form --}}\r\n-        <div class=\"w-full px-2\">\r\n+        <div class=\"w-full px-4\">\r\n             <input type=\"email\" name=\"email\" id=\"email\" placeholder=\"Masukkan Email\" class=\"w-full focus:border-transparent focus:ring-0 focus:border-b-intiHijau border-x-0 border-t-0 outline-b-2 border-b-intiHijau\">\r\n         </div>\r\n     </div>\r\n </body>\r\n"
+                },
+                {
+                    "date": 1715138026656,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -30,9 +30,9 @@\n             <h2 class=\"font-poppins text-intiHijau font-bold text-xl\">Email</h2>\r\n         </div>\r\n         {{-- body form --}}\r\n         <div class=\"w-full px-4\">\r\n-            <input type=\"email\" name=\"email\" id=\"email\" placeholder=\"Masukkan Email\" class=\"w-full focus:border-transparent focus:ring-0 focus:border-b-intiHijau border-x-0 border-t-0 outline-b-2 border-b-intiHijau\">\r\n+            <input type=\"email\" name=\"email\" id=\"email\" placeholder=\"Masukkan Email\" class=\"w-full focus:border-transparent focus:border-b-intiHijau border-x-0 border-t-0 outline-b-2 border-b-intiHijau\">\r\n         </div>\r\n     </div>\r\n </body>\r\n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1715138036389,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -30,9 +30,9 @@\n             <h2 class=\"font-poppins text-intiHijau font-bold text-xl\">Email</h2>\r\n         </div>\r\n         {{-- body form --}}\r\n         <div class=\"w-full px-4\">\r\n-            <input type=\"email\" name=\"email\" id=\"email\" placeholder=\"Masukkan Email\" class=\"w-full focus:border-transparent focus:border-b-intiHijau border-x-0 border-t-0 outline-b-2 border-b-intiHijau\">\r\n+            <input type=\"email\" name=\"email\" id=\"email\" placeholder=\"Masukkan Email\" class=\"w-full focus:border-transparent focus:ring-0 focus:border-b-intiHijau border-x-0 border-t-0 outline-b-2 border-b-intiHijau\">\r\n         </div>\r\n     </div>\r\n </body>\r\n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1715138052499,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -30,9 +30,9 @@\n             <h2 class=\"font-poppins text-intiHijau font-bold text-xl\">Email</h2>\r\n         </div>\r\n         {{-- body form --}}\r\n         <div class=\"w-full px-4\">\r\n-            <input type=\"email\" name=\"email\" id=\"email\" placeholder=\"Masukkan Email\" class=\"w-full focus:border-transparent focus:ring-0 focus:border-b-intiHijau border-x-0 border-t-0 outline-b-2 border-b-intiHijau\">\r\n+            <input type=\"email\" name=\"email\" id=\"email\" placeholder=\"Masukkan Email\" class=\"w-full  focus:ring-0 focus:border-b-intiHijau border-x-0 border-t-0 outline-b-2 border-b-intiHijau\">\r\n         </div>\r\n     </div>\r\n </body>\r\n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1715138421709,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -30,9 +30,9 @@\n             <h2 class=\"font-poppins text-intiHijau font-bold text-xl\">Email</h2>\r\n         </div>\r\n         {{-- body form --}}\r\n         <div class=\"w-full px-4\">\r\n-            <input type=\"email\" name=\"email\" id=\"email\" placeholder=\"Masukkan Email\" class=\"w-full  focus:ring-0 focus:border-b-intiHijau border-x-0 border-t-0 outline-b-2 border-b-intiHijau\">\r\n+            <input type=\"email\" name=\"email\" id=\"email\" placeholder=\"Masukkan Email\" class=\"w-full placeholder:font-poppins focus:ring-0 focus:border-b-intiHijau border-x-0 border-t-0 outline-b-2 border-b-intiHijau\">\r\n         </div>\r\n     </div>\r\n </body>\r\n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1715138627178,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -30,9 +30,9 @@\n             <h2 class=\"font-poppins text-intiHijau font-bold text-xl\">Email</h2>\r\n         </div>\r\n         {{-- body form --}}\r\n         <div class=\"w-full px-4\">\r\n-            <input type=\"email\" name=\"email\" id=\"email\" placeholder=\"Masukkan Email\" class=\"w-full placeholder:font-poppins focus:ring-0 focus:border-b-intiHijau border-x-0 border-t-0 outline-b-2 border-b-intiHijau\">\r\n+            <input type=\"email\" name=\"email\" id=\"email\" placeholder=\"Masukkan Email\" class=\"w-full placeholder:font-inter focus:ring-0 focus:border-b-intiHijau border-x-0 border-t-0 outline-b-2 border-b-intiHijau\">\r\n         </div>\r\n     </div>\r\n </body>\r\n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1715138764630,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,12 +5,10 @@\n     <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n     <meta http-equiv=\"X-UA-Compatible\" content=\"ie=edge\">\r\n     {{-- font --}}\r\n     <link rel=\"preconnect\" href=\"https://fonts.googleapis.com\">\r\n-    <link rel=\"preconnect\" href=\"https://fonts.gstatic.com\" crossorigin>\r\n-    <link\r\n-        href=\"https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap\"\r\n-        rel=\"stylesheet\">\r\n+<link rel=\"preconnect\" href=\"https://fonts.gstatic.com\" crossorigin>\r\n+<link href=\"https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@100..900&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap\" rel=\"stylesheet\">\r\n     @vite(['resources/css/app.css', 'resources/js/app.js'])\r\n     <title>Login | SEKILAN</title>\r\n </head>\r\n <body>\r\n"
+                },
+                {
+                    "date": 1715138793561,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,10 +5,10 @@\n     <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n     <meta http-equiv=\"X-UA-Compatible\" content=\"ie=edge\">\r\n     {{-- font --}}\r\n     <link rel=\"preconnect\" href=\"https://fonts.googleapis.com\">\r\n-<link rel=\"preconnect\" href=\"https://fonts.gstatic.com\" crossorigin>\r\n-<link href=\"https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@100..900&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap\" rel=\"stylesheet\">\r\n+    <link rel=\"preconnect\" href=\"https://fonts.gstatic.com\" crossorigin>\r\n+    <link href=\"https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@100..900&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap\" rel=\"stylesheet\">\r\n     @vite(['resources/css/app.css', 'resources/js/app.js'])\r\n     <title>Login | SEKILAN</title>\r\n </head>\r\n <body>\r\n"
+                },
+                {
+                    "date": 1715138962480,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -28,9 +28,9 @@\n             <h2 class=\"font-poppins text-intiHijau font-bold text-xl\">Email</h2>\r\n         </div>\r\n         {{-- body form --}}\r\n         <div class=\"w-full px-4\">\r\n-            <input type=\"email\" name=\"email\" id=\"email\" placeholder=\"Masukkan Email\" class=\"w-full placeholder:font-inter focus:ring-0 focus:border-b-intiHijau border-x-0 border-t-0 outline-b-2 border-b-intiHijau\">\r\n+            <input type=\"email\" name=\"email\" id=\"email\" placeholder=\"Masukkan Email\" class=\"w-full placeholder:font-inter placeholder:font-light placeholder:text-sm focus:ring-0 focus:border-b-intiHijau border-x-0 border-t-0 outline-b-2 border-b-intiHijau\">\r\n         </div>\r\n     </div>\r\n </body>\r\n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1715138980246,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -28,9 +28,9 @@\n             <h2 class=\"font-poppins text-intiHijau font-bold text-xl\">Email</h2>\r\n         </div>\r\n         {{-- body form --}}\r\n         <div class=\"w-full px-4\">\r\n-            <input type=\"email\" name=\"email\" id=\"email\" placeholder=\"Masukkan Email\" class=\"w-full placeholder:font-inter placeholder:font-light placeholder:text-sm focus:ring-0 focus:border-b-intiHijau border-x-0 border-t-0 outline-b-2 border-b-intiHijau\">\r\n+            <input type=\"email\" name=\"email\" id=\"email\" placeholder=\"masukkan Email\" class=\"w-full placeholder:font-inter placeholder:font-light placeholder:text-sm focus:ring-0 focus:border-b-intiHijau border-x-0 border-t-0 outline-b-2 border-b-intiHijau\">\r\n         </div>\r\n     </div>\r\n </body>\r\n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1715139006019,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -30,7 +30,15 @@\n         {{-- body form --}}\r\n         <div class=\"w-full px-4\">\r\n             <input type=\"email\" name=\"email\" id=\"email\" placeholder=\"masukkan Email\" class=\"w-full placeholder:font-inter placeholder:font-light placeholder:text-sm focus:ring-0 focus:border-b-intiHijau border-x-0 border-t-0 outline-b-2 border-b-intiHijau\">\r\n         </div>\r\n+        {{-- judul form --}}\r\n+        <div class=\"mt-10 px-4\">\r\n+            <h2 class=\"font-poppins text-intiHijau font-bold text-xl\">Email</h2>\r\n+        </div>\r\n+        {{-- body form --}}\r\n+        <div class=\"w-full px-4\">\r\n+            <input type=\"email\" name=\"email\" id=\"email\" placeholder=\"masukkan Email\" class=\"w-full placeholder:font-inter placeholder:font-light placeholder:text-sm focus:ring-0 focus:border-b-intiHijau border-x-0 border-t-0 outline-b-2 border-b-intiHijau\">\r\n+        </div>\r\n     </div>\r\n </body>\r\n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1715139039716,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -32,9 +32,9 @@\n             <input type=\"email\" name=\"email\" id=\"email\" placeholder=\"masukkan Email\" class=\"w-full placeholder:font-inter placeholder:font-light placeholder:text-sm focus:ring-0 focus:border-b-intiHijau border-x-0 border-t-0 outline-b-2 border-b-intiHijau\">\r\n         </div>\r\n         {{-- judul form --}}\r\n         <div class=\"mt-10 px-4\">\r\n-            <h2 class=\"font-poppins text-intiHijau font-bold text-xl\">Email</h2>\r\n+            <h2 class=\"font-poppins text-intiHijau font-bold text-xl\">Password</h2>\r\n         </div>\r\n         {{-- body form --}}\r\n         <div class=\"w-full px-4\">\r\n             <input type=\"email\" name=\"email\" id=\"email\" placeholder=\"masukkan Email\" class=\"w-full placeholder:font-inter placeholder:font-light placeholder:text-sm focus:ring-0 focus:border-b-intiHijau border-x-0 border-t-0 outline-b-2 border-b-intiHijau\">\r\n"
+                },
+                {
+                    "date": 1715139065013,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -36,9 +36,9 @@\n             <h2 class=\"font-poppins text-intiHijau font-bold text-xl\">Password</h2>\r\n         </div>\r\n         {{-- body form --}}\r\n         <div class=\"w-full px-4\">\r\n-            <input type=\"email\" name=\"email\" id=\"email\" placeholder=\"masukkan Email\" class=\"w-full placeholder:font-inter placeholder:font-light placeholder:text-sm focus:ring-0 focus:border-b-intiHijau border-x-0 border-t-0 outline-b-2 border-b-intiHijau\">\r\n+            <input type=\"password\" name=\"password\" id=\"password\" placeholder=\"masukkan Email\" class=\"w-full placeholder:font-inter placeholder:font-light placeholder:text-sm focus:ring-0 focus:border-b-intiHijau border-x-0 border-t-0 outline-b-2 border-b-intiHijau\">\r\n         </div>\r\n     </div>\r\n </body>\r\n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1715139081280,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -28,17 +28,17 @@\n             <h2 class=\"font-poppins text-intiHijau font-bold text-xl\">Email</h2>\r\n         </div>\r\n         {{-- body form --}}\r\n         <div class=\"w-full px-4\">\r\n-            <input type=\"email\" name=\"email\" id=\"email\" placeholder=\"masukkan Email\" class=\"w-full placeholder:font-inter placeholder:font-light placeholder:text-sm focus:ring-0 focus:border-b-intiHijau border-x-0 border-t-0 outline-b-2 border-b-intiHijau\">\r\n+            <input type=\"email\" name=\"email\" id=\"email\" placeholder=\"masukkan email\" class=\"w-full placeholder:font-inter placeholder:font-light placeholder:text-sm focus:ring-0 focus:border-b-intiHijau border-x-0 border-t-0 outline-b-2 border-b-intiHijau\">\r\n         </div>\r\n         {{-- judul form --}}\r\n         <div class=\"mt-10 px-4\">\r\n             <h2 class=\"font-poppins text-intiHijau font-bold text-xl\">Password</h2>\r\n         </div>\r\n         {{-- body form --}}\r\n         <div class=\"w-full px-4\">\r\n-            <input type=\"password\" name=\"password\" id=\"password\" placeholder=\"masukkan Email\" class=\"w-full placeholder:font-inter placeholder:font-light placeholder:text-sm focus:ring-0 focus:border-b-intiHijau border-x-0 border-t-0 outline-b-2 border-b-intiHijau\">\r\n+            <input type=\"password\" name=\"password\" id=\"password\" placeholder=\"masukkan password\" class=\"w-full placeholder:font-inter placeholder:font-light placeholder:text-sm focus:ring-0 focus:border-b-intiHijau border-x-0 border-t-0 outline-b-2 border-b-intiHijau\">\r\n         </div>\r\n     </div>\r\n </body>\r\n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1715139193962,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -35,9 +35,9 @@\n         <div class=\"mt-10 px-4\">\r\n             <h2 class=\"font-poppins text-intiHijau font-bold text-xl\">Password</h2>\r\n         </div>\r\n         {{-- body form --}}\r\n-        <div class=\"w-full px-4\">\r\n+        <div class=\"w-full px-2\">\r\n             <input type=\"password\" name=\"password\" id=\"password\" placeholder=\"masukkan password\" class=\"w-full placeholder:font-inter placeholder:font-light placeholder:text-sm focus:ring-0 focus:border-b-intiHijau border-x-0 border-t-0 outline-b-2 border-b-intiHijau\">\r\n         </div>\r\n     </div>\r\n </body>\r\n"
+                },
+                {
+                    "date": 1715139218943,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -31,9 +31,9 @@\n         <div class=\"w-full px-4\">\r\n             <input type=\"email\" name=\"email\" id=\"email\" placeholder=\"masukkan email\" class=\"w-full placeholder:font-inter placeholder:font-light placeholder:text-sm focus:ring-0 focus:border-b-intiHijau border-x-0 border-t-0 outline-b-2 border-b-intiHijau\">\r\n         </div>\r\n         {{-- judul form --}}\r\n-        <div class=\"mt-10 px-4\">\r\n+        <div class=\"mt-10 px-1\">\r\n             <h2 class=\"font-poppins text-intiHijau font-bold text-xl\">Password</h2>\r\n         </div>\r\n         {{-- body form --}}\r\n         <div class=\"w-full px-2\">\r\n"
+                },
+                {
+                    "date": 1715139232630,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -31,9 +31,9 @@\n         <div class=\"w-full px-4\">\r\n             <input type=\"email\" name=\"email\" id=\"email\" placeholder=\"masukkan email\" class=\"w-full placeholder:font-inter placeholder:font-light placeholder:text-sm focus:ring-0 focus:border-b-intiHijau border-x-0 border-t-0 outline-b-2 border-b-intiHijau\">\r\n         </div>\r\n         {{-- judul form --}}\r\n-        <div class=\"mt-10 px-1\">\r\n+        <div class=\"mt-10 px-4\">\r\n             <h2 class=\"font-poppins text-intiHijau font-bold text-xl\">Password</h2>\r\n         </div>\r\n         {{-- body form --}}\r\n         <div class=\"w-full px-2\">\r\n"
+                },
+                {
+                    "date": 1715139243468,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -31,9 +31,9 @@\n         <div class=\"w-full px-4\">\r\n             <input type=\"email\" name=\"email\" id=\"email\" placeholder=\"masukkan email\" class=\"w-full placeholder:font-inter placeholder:font-light placeholder:text-sm focus:ring-0 focus:border-b-intiHijau border-x-0 border-t-0 outline-b-2 border-b-intiHijau\">\r\n         </div>\r\n         {{-- judul form --}}\r\n-        <div class=\"mt-10 px-4\">\r\n+        <div class=\"mt-5 px-4\">\r\n             <h2 class=\"font-poppins text-intiHijau font-bold text-xl\">Password</h2>\r\n         </div>\r\n         {{-- body form --}}\r\n         <div class=\"w-full px-2\">\r\n"
+                },
+                {
+                    "date": 1715139485697,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -38,7 +38,10 @@\n         {{-- body form --}}\r\n         <div class=\"w-full px-2\">\r\n             <input type=\"password\" name=\"password\" id=\"password\" placeholder=\"masukkan password\" class=\"w-full placeholder:font-inter placeholder:font-light placeholder:text-sm focus:ring-0 focus:border-b-intiHijau border-x-0 border-t-0 outline-b-2 border-b-intiHijau\">\r\n         </div>\r\n+        <div>\r\n+            <a href=\"#\">Lupa Password?</a>\r\n+        </div>\r\n     </div>\r\n </body>\r\n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1715139500343,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -38,9 +38,9 @@\n         {{-- body form --}}\r\n         <div class=\"w-full px-2\">\r\n             <input type=\"password\" name=\"password\" id=\"password\" placeholder=\"masukkan password\" class=\"w-full placeholder:font-inter placeholder:font-light placeholder:text-sm focus:ring-0 focus:border-b-intiHijau border-x-0 border-t-0 outline-b-2 border-b-intiHijau\">\r\n         </div>\r\n-        <div>\r\n+        <div class=\"mt-4\">\r\n             <a href=\"#\">Lupa Password?</a>\r\n         </div>\r\n     </div>\r\n </body>\r\n"
+                },
+                {
+                    "date": 1715139526204,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -35,9 +35,9 @@\n         <div class=\"mt-5 px-4\">\r\n             <h2 class=\"font-poppins text-intiHijau font-bold text-xl\">Password</h2>\r\n         </div>\r\n         {{-- body form --}}\r\n-        <div class=\"w-full px-2\">\r\n+        <div class=\"w-full px-4\">\r\n             <input type=\"password\" name=\"password\" id=\"password\" placeholder=\"masukkan password\" class=\"w-full placeholder:font-inter placeholder:font-light placeholder:text-sm focus:ring-0 focus:border-b-intiHijau border-x-0 border-t-0 outline-b-2 border-b-intiHijau\">\r\n         </div>\r\n         <div class=\"mt-4\">\r\n             <a href=\"#\">Lupa Password?</a>\r\n"
+                },
+                {
+                    "date": 1715139535048,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -38,9 +38,9 @@\n         {{-- body form --}}\r\n         <div class=\"w-full px-4\">\r\n             <input type=\"password\" name=\"password\" id=\"password\" placeholder=\"masukkan password\" class=\"w-full placeholder:font-inter placeholder:font-light placeholder:text-sm focus:ring-0 focus:border-b-intiHijau border-x-0 border-t-0 outline-b-2 border-b-intiHijau\">\r\n         </div>\r\n-        <div class=\"mt-4\">\r\n+        <div class=\"mt-4 px-4\">\r\n             <a href=\"#\">Lupa Password?</a>\r\n         </div>\r\n     </div>\r\n </body>\r\n"
+                },
+                {
+                    "date": 1715139553457,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -38,9 +38,9 @@\n         {{-- body form --}}\r\n         <div class=\"w-full px-4\">\r\n             <input type=\"password\" name=\"password\" id=\"password\" placeholder=\"masukkan password\" class=\"w-full placeholder:font-inter placeholder:font-light placeholder:text-sm focus:ring-0 focus:border-b-intiHijau border-x-0 border-t-0 outline-b-2 border-b-intiHijau\">\r\n         </div>\r\n-        <div class=\"mt-4 px-4\">\r\n+        <div class=\"mt-4 pl-4\">\r\n             <a href=\"#\">Lupa Password?</a>\r\n         </div>\r\n     </div>\r\n </body>\r\n"
+                },
+                {
+                    "date": 1715139582854,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -38,10 +38,10 @@\n         {{-- body form --}}\r\n         <div class=\"w-full px-4\">\r\n             <input type=\"password\" name=\"password\" id=\"password\" placeholder=\"masukkan password\" class=\"w-full placeholder:font-inter placeholder:font-light placeholder:text-sm focus:ring-0 focus:border-b-intiHijau border-x-0 border-t-0 outline-b-2 border-b-intiHijau\">\r\n         </div>\r\n-        <div class=\"mt-4 pl-4\">\r\n-            <a href=\"#\">Lupa Password?</a>\r\n+        <div class=\"mt-4 pl-6\">\r\n+            <a href=\"#\" class=\"font-inter font-medium\">Lupa Password?</a>\r\n         </div>\r\n     </div>\r\n </body>\r\n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1715139605322,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -39,9 +39,9 @@\n         <div class=\"w-full px-4\">\r\n             <input type=\"password\" name=\"password\" id=\"password\" placeholder=\"masukkan password\" class=\"w-full placeholder:font-inter placeholder:font-light placeholder:text-sm focus:ring-0 focus:border-b-intiHijau border-x-0 border-t-0 outline-b-2 border-b-intiHijau\">\r\n         </div>\r\n         <div class=\"mt-4 pl-6\">\r\n-            <a href=\"#\" class=\"font-inter font-medium\">Lupa Password?</a>\r\n+            <a href=\"#\" class=\"font-inter font-medium text-2xl\">Lupa Password?</a>\r\n         </div>\r\n     </div>\r\n </body>\r\n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1715139624383,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -39,9 +39,9 @@\n         <div class=\"w-full px-4\">\r\n             <input type=\"password\" name=\"password\" id=\"password\" placeholder=\"masukkan password\" class=\"w-full placeholder:font-inter placeholder:font-light placeholder:text-sm focus:ring-0 focus:border-b-intiHijau border-x-0 border-t-0 outline-b-2 border-b-intiHijau\">\r\n         </div>\r\n         <div class=\"mt-4 pl-6\">\r\n-            <a href=\"#\" class=\"font-inter font-medium text-2xl\">Lupa Password?</a>\r\n+            <a href=\"#\" class=\"font-inter font-medium text-base\">Lupa Password?</a>\r\n         </div>\r\n     </div>\r\n </body>\r\n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1715139631098,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -39,9 +39,9 @@\n         <div class=\"w-full px-4\">\r\n             <input type=\"password\" name=\"password\" id=\"password\" placeholder=\"masukkan password\" class=\"w-full placeholder:font-inter placeholder:font-light placeholder:text-sm focus:ring-0 focus:border-b-intiHijau border-x-0 border-t-0 outline-b-2 border-b-intiHijau\">\r\n         </div>\r\n         <div class=\"mt-4 pl-6\">\r\n-            <a href=\"#\" class=\"font-inter font-medium text-base\">Lupa Password?</a>\r\n+            <a href=\"#\" class=\"font-inter font-medium text-sm\">Lupa Password?</a>\r\n         </div>\r\n     </div>\r\n </body>\r\n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1715139639460,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -39,9 +39,9 @@\n         <div class=\"w-full px-4\">\r\n             <input type=\"password\" name=\"password\" id=\"password\" placeholder=\"masukkan password\" class=\"w-full placeholder:font-inter placeholder:font-light placeholder:text-sm focus:ring-0 focus:border-b-intiHijau border-x-0 border-t-0 outline-b-2 border-b-intiHijau\">\r\n         </div>\r\n         <div class=\"mt-4 pl-6\">\r\n-            <a href=\"#\" class=\"font-inter font-medium text-sm\">Lupa Password?</a>\r\n+            <a href=\"#\" class=\"font-inter font-medium text-sm text-intiHijau\">Lupa Password?</a>\r\n         </div>\r\n     </div>\r\n </body>\r\n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1715139646958,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -38,9 +38,9 @@\n         {{-- body form --}}\r\n         <div class=\"w-full px-4\">\r\n             <input type=\"password\" name=\"password\" id=\"password\" placeholder=\"masukkan password\" class=\"w-full placeholder:font-inter placeholder:font-light placeholder:text-sm focus:ring-0 focus:border-b-intiHijau border-x-0 border-t-0 outline-b-2 border-b-intiHijau\">\r\n         </div>\r\n-        <div class=\"mt-4 pl-6\">\r\n+        <div class=\"mt-2 pl-6\">\r\n             <a href=\"#\" class=\"font-inter font-medium text-sm text-intiHijau\">Lupa Password?</a>\r\n         </div>\r\n     </div>\r\n </body>\r\n"
+                },
+                {
+                    "date": 1715139660073,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -38,9 +38,9 @@\n         {{-- body form --}}\r\n         <div class=\"w-full px-4\">\r\n             <input type=\"password\" name=\"password\" id=\"password\" placeholder=\"masukkan password\" class=\"w-full placeholder:font-inter placeholder:font-light placeholder:text-sm focus:ring-0 focus:border-b-intiHijau border-x-0 border-t-0 outline-b-2 border-b-intiHijau\">\r\n         </div>\r\n-        <div class=\"mt-2 pl-6\">\r\n+        <div class=\"mt-2 pl-5\">\r\n             <a href=\"#\" class=\"font-inter font-medium text-sm text-intiHijau\">Lupa Password?</a>\r\n         </div>\r\n     </div>\r\n </body>\r\n"
+                },
+                {
+                    "date": 1715139885074,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -41,7 +41,13 @@\n         </div>\r\n         <div class=\"mt-2 pl-5\">\r\n             <a href=\"#\" class=\"font-inter font-medium text-sm text-intiHijau\">Lupa Password?</a>\r\n         </div>\r\n+\r\n+        {{-- button --}}\r\n+        <div>\r\n+            <button></button>\r\n+        </div>\r\n     </div>\r\n+\r\n </body>\r\n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1715139957255,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -44,9 +44,11 @@\n         </div>\r\n \r\n         {{-- button --}}\r\n         <div>\r\n-            <button></button>\r\n+            <button class=\"font-inter font-bold text-xl\">\r\n+                LOGIN\r\n+            </button>\r\n         </div>\r\n     </div>\r\n \r\n </body>\r\n"
+                },
+                {
+                    "date": 1715139982074,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -43,9 +43,9 @@\n             <a href=\"#\" class=\"font-inter font-medium text-sm text-intiHijau\">Lupa Password?</a>\r\n         </div>\r\n \r\n         {{-- button --}}\r\n-        <div>\r\n+        <div class=\"bg-red-400\">\r\n             <button class=\"font-inter font-bold text-xl\">\r\n                 LOGIN\r\n             </button>\r\n         </div>\r\n"
+                },
+                {
+                    "date": 1715140008412,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -43,9 +43,9 @@\n             <a href=\"#\" class=\"font-inter font-medium text-sm text-intiHijau\">Lupa Password?</a>\r\n         </div>\r\n \r\n         {{-- button --}}\r\n-        <div class=\"bg-red-400\">\r\n+        <div class=\"bg-red-400 mt-6 flex\">\r\n             <button class=\"font-inter font-bold text-xl\">\r\n                 LOGIN\r\n             </button>\r\n         </div>\r\n"
+                },
+                {
+                    "date": 1715140051954,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -43,10 +43,10 @@\n             <a href=\"#\" class=\"font-inter font-medium text-sm text-intiHijau\">Lupa Password?</a>\r\n         </div>\r\n \r\n         {{-- button --}}\r\n-        <div class=\"bg-red-400 mt-6 flex\">\r\n-            <button class=\"font-inter font-bold text-xl\">\r\n+        <div class=\"bg-red-400 mt-6 flex justify-center\">\r\n+            <button class=\"font-inter font-bold text-xl text-white\">\r\n                 LOGIN\r\n             </button>\r\n         </div>\r\n     </div>\r\n"
+                },
+                {
+                    "date": 1715140066329,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -44,9 +44,9 @@\n         </div>\r\n \r\n         {{-- button --}}\r\n         <div class=\"bg-red-400 mt-6 flex justify-center\">\r\n-            <button class=\"font-inter font-bold text-xl text-white\">\r\n+            <button class=\"font-inter font-bold text-xl text-white bg-hijauPrimary\">\r\n                 LOGIN\r\n             </button>\r\n         </div>\r\n     </div>\r\n"
+                },
+                {
+                    "date": 1715140094110,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -44,9 +44,9 @@\n         </div>\r\n \r\n         {{-- button --}}\r\n         <div class=\"bg-red-400 mt-6 flex justify-center\">\r\n-            <button class=\"font-inter font-bold text-xl text-white bg-hijauPrimary\">\r\n+            <button class=\"font-inter font-bold text-xl text-white bg-hijauPrimary px-40\">\r\n                 LOGIN\r\n             </button>\r\n         </div>\r\n     </div>\r\n"
+                },
+                {
+                    "date": 1715140103408,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -43,9 +43,9 @@\n             <a href=\"#\" class=\"font-inter font-medium text-sm text-intiHijau\">Lupa Password?</a>\r\n         </div>\r\n \r\n         {{-- button --}}\r\n-        <div class=\"bg-red-400 mt-6 flex justify-center\">\r\n+        <div class=\"mt-6 flex justify-center\">\r\n             <button class=\"font-inter font-bold text-xl text-white bg-hijauPrimary px-40\">\r\n                 LOGIN\r\n             </button>\r\n         </div>\r\n"
+                },
+                {
+                    "date": 1715140112365,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -44,9 +44,9 @@\n         </div>\r\n \r\n         {{-- button --}}\r\n         <div class=\"mt-6 flex justify-center\">\r\n-            <button class=\"font-inter font-bold text-xl text-white bg-hijauPrimary px-40\">\r\n+            <button class=\"font-inter font-bold text-xl text-white bg-hijauPrimary px-28\">\r\n                 LOGIN\r\n             </button>\r\n         </div>\r\n     </div>\r\n"
+                },
+                {
+                    "date": 1715140125750,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -44,9 +44,9 @@\n         </div>\r\n \r\n         {{-- button --}}\r\n         <div class=\"mt-6 flex justify-center\">\r\n-            <button class=\"font-inter font-bold text-xl text-white bg-hijauPrimary px-28\">\r\n+            <button class=\"font-inter font-bold text-xl text-white bg-hijauPrimary px-36\">\r\n                 LOGIN\r\n             </button>\r\n         </div>\r\n     </div>\r\n"
+                },
+                {
+                    "date": 1715140136662,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -44,9 +44,9 @@\n         </div>\r\n \r\n         {{-- button --}}\r\n         <div class=\"mt-6 flex justify-center\">\r\n-            <button class=\"font-inter font-bold text-xl text-white bg-hijauPrimary px-36\">\r\n+            <button class=\"font-inter font-bold text-xl text-white bg-hijauPrimary px-32 py-5\">\r\n                 LOGIN\r\n             </button>\r\n         </div>\r\n     </div>\r\n"
+                },
+                {
+                    "date": 1715140144478,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -44,9 +44,9 @@\n         </div>\r\n \r\n         {{-- button --}}\r\n         <div class=\"mt-6 flex justify-center\">\r\n-            <button class=\"font-inter font-bold text-xl text-white bg-hijauPrimary px-32 py-5\">\r\n+            <button class=\"font-inter font-bold text-xl text-white bg-hijauPrimary px-32 py-3\">\r\n                 LOGIN\r\n             </button>\r\n         </div>\r\n     </div>\r\n"
+                },
+                {
+                    "date": 1715140153411,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -44,9 +44,9 @@\n         </div>\r\n \r\n         {{-- button --}}\r\n         <div class=\"mt-6 flex justify-center\">\r\n-            <button class=\"font-inter font-bold text-xl text-white bg-hijauPrimary px-32 py-3\">\r\n+            <button class=\"font-inter font-bold text-xl text-white bg-hijauPrimary px-32 py-3 rounded-lg\">\r\n                 LOGIN\r\n             </button>\r\n         </div>\r\n     </div>\r\n"
+                },
+                {
+                    "date": 1715140160080,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -44,9 +44,9 @@\n         </div>\r\n \r\n         {{-- button --}}\r\n         <div class=\"mt-6 flex justify-center\">\r\n-            <button class=\"font-inter font-bold text-xl text-white bg-hijauPrimary px-32 py-3 rounded-lg\">\r\n+            <button class=\"font-inter font-bold text-xl text-white bg-hijauPrimary px-32 py-3 rounded-xl\">\r\n                 LOGIN\r\n             </button>\r\n         </div>\r\n     </div>\r\n"
+                },
+                {
+                    "date": 1715140173077,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -44,9 +44,9 @@\n         </div>\r\n \r\n         {{-- button --}}\r\n         <div class=\"mt-6 flex justify-center\">\r\n-            <button class=\"font-inter font-bold text-xl text-white bg-hijauPrimary px-32 py-3 rounded-xl\">\r\n+            <button class=\"font-inter font-bold text-xl text-white bg-hijauPrimary px-32 py-3 rounded-2xl\">\r\n                 LOGIN\r\n             </button>\r\n         </div>\r\n     </div>\r\n"
+                },
+                {
+                    "date": 1715140328475,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -47,8 +47,9 @@\n         <div class=\"mt-6 flex justify-center\">\r\n             <button class=\"font-inter font-bold text-xl text-white bg-hijauPrimary px-32 py-3 rounded-2xl\">\r\n                 LOGIN\r\n             </button>\r\n+            <p>Belum Punya Akun? <a href=\"#\" class=\"text-intiHijau\">Daftar</a></p>\r\n         </div>\r\n     </div>\r\n \r\n </body>\r\n"
+                },
+                {
+                    "date": 1715140373429,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -43,9 +43,9 @@\n             <a href=\"#\" class=\"font-inter font-medium text-sm text-intiHijau\">Lupa Password?</a>\r\n         </div>\r\n \r\n         {{-- button --}}\r\n-        <div class=\"mt-6 flex justify-center\">\r\n+        <div class=\"mt-6 flex flex-col justify-center\">\r\n             <button class=\"font-inter font-bold text-xl text-white bg-hijauPrimary px-32 py-3 rounded-2xl\">\r\n                 LOGIN\r\n             </button>\r\n             <p>Belum Punya Akun? <a href=\"#\" class=\"text-intiHijau\">Daftar</a></p>\r\n"
+                },
+                {
+                    "date": 1715140385008,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -43,9 +43,9 @@\n             <a href=\"#\" class=\"font-inter font-medium text-sm text-intiHijau\">Lupa Password?</a>\r\n         </div>\r\n \r\n         {{-- button --}}\r\n-        <div class=\"mt-6 flex flex-col justify-center\">\r\n+        <div class=\"mt-6 flex-col justify-center\">\r\n             <button class=\"font-inter font-bold text-xl text-white bg-hijauPrimary px-32 py-3 rounded-2xl\">\r\n                 LOGIN\r\n             </button>\r\n             <p>Belum Punya Akun? <a href=\"#\" class=\"text-intiHijau\">Daftar</a></p>\r\n"
+                },
+                {
+                    "date": 1715140395165,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -43,9 +43,9 @@\n             <a href=\"#\" class=\"font-inter font-medium text-sm text-intiHijau\">Lupa Password?</a>\r\n         </div>\r\n \r\n         {{-- button --}}\r\n-        <div class=\"mt-6 flex-col justify-center\">\r\n+        <div class=\"mt-6 flex flex-col justify-center\">\r\n             <button class=\"font-inter font-bold text-xl text-white bg-hijauPrimary px-32 py-3 rounded-2xl\">\r\n                 LOGIN\r\n             </button>\r\n             <p>Belum Punya Akun? <a href=\"#\" class=\"text-intiHijau\">Daftar</a></p>\r\n"
+                },
+                {
+                    "date": 1715140412935,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -43,9 +43,9 @@\n             <a href=\"#\" class=\"font-inter font-medium text-sm text-intiHijau\">Lupa Password?</a>\r\n         </div>\r\n \r\n         {{-- button --}}\r\n-        <div class=\"mt-6 flex flex-col justify-center\">\r\n+        <div class=\"mt-6 flex flex-col px-4 justify-center\">\r\n             <button class=\"font-inter font-bold text-xl text-white bg-hijauPrimary px-32 py-3 rounded-2xl\">\r\n                 LOGIN\r\n             </button>\r\n             <p>Belum Punya Akun? <a href=\"#\" class=\"text-intiHijau\">Daftar</a></p>\r\n"
+                },
+                {
+                    "date": 1715140460426,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -47,9 +47,9 @@\n         <div class=\"mt-6 flex flex-col px-4 justify-center\">\r\n             <button class=\"font-inter font-bold text-xl text-white bg-hijauPrimary px-32 py-3 rounded-2xl\">\r\n                 LOGIN\r\n             </button>\r\n-            <p>Belum Punya Akun? <a href=\"#\" class=\"text-intiHijau\">Daftar</a></p>\r\n+            <p class=\"font-inter\">Belum Punya Akun? <a href=\"#\" class=\"text-intiHijau\">Daftar</a></p>\r\n         </div>\r\n     </div>\r\n \r\n </body>\r\n"
+                },
+                {
+                    "date": 1715140468552,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -47,9 +47,9 @@\n         <div class=\"mt-6 flex flex-col px-4 justify-center\">\r\n             <button class=\"font-inter font-bold text-xl text-white bg-hijauPrimary px-32 py-3 rounded-2xl\">\r\n                 LOGIN\r\n             </button>\r\n-            <p class=\"font-inter\">Belum Punya Akun? <a href=\"#\" class=\"text-intiHijau\">Daftar</a></p>\r\n+            <p class=\"font-inter font-medium\">Belum Punya Akun? <a href=\"#\" class=\"text-intiHijau\">Daftar</a></p>\r\n         </div>\r\n     </div>\r\n \r\n </body>\r\n"
+                },
+                {
+                    "date": 1715140483908,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -47,9 +47,9 @@\n         <div class=\"mt-6 flex flex-col px-4 justify-center\">\r\n             <button class=\"font-inter font-bold text-xl text-white bg-hijauPrimary px-32 py-3 rounded-2xl\">\r\n                 LOGIN\r\n             </button>\r\n-            <p class=\"font-inter font-medium\">Belum Punya Akun? <a href=\"#\" class=\"text-intiHijau\">Daftar</a></p>\r\n+            <p class=\"font-inter font-medium text-sm\">Belum Punya Akun? <a href=\"#\" class=\"text-intiHijau\">Daftar</a></p>\r\n         </div>\r\n     </div>\r\n \r\n </body>\r\n"
+                },
+                {
+                    "date": 1715140502006,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -43,9 +43,9 @@\n             <a href=\"#\" class=\"font-inter font-medium text-sm text-intiHijau\">Lupa Password?</a>\r\n         </div>\r\n \r\n         {{-- button --}}\r\n-        <div class=\"mt-6 flex flex-col px-4 justify-center\">\r\n+        <div class=\"mt-6 flex flex-col px-4 justify-center items-center\">\r\n             <button class=\"font-inter font-bold text-xl text-white bg-hijauPrimary px-32 py-3 rounded-2xl\">\r\n                 LOGIN\r\n             </button>\r\n             <p class=\"font-inter font-medium text-sm\">Belum Punya Akun? <a href=\"#\" class=\"text-intiHijau\">Daftar</a></p>\r\n"
+                },
+                {
+                    "date": 1715140510941,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -47,9 +47,9 @@\n         <div class=\"mt-6 flex flex-col px-4 justify-center items-center\">\r\n             <button class=\"font-inter font-bold text-xl text-white bg-hijauPrimary px-32 py-3 rounded-2xl\">\r\n                 LOGIN\r\n             </button>\r\n-            <p class=\"font-inter font-medium text-sm\">Belum Punya Akun? <a href=\"#\" class=\"text-intiHijau\">Daftar</a></p>\r\n+            <p class=\"font-inter font-medium text-sm mt-3\">Belum Punya Akun? <a href=\"#\" class=\"text-intiHijau\">Daftar</a></p>\r\n         </div>\r\n     </div>\r\n \r\n </body>\r\n"
+                },
+                {
+                    "date": 1715140634993,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -44,9 +44,9 @@\n         </div>\r\n \r\n         {{-- button --}}\r\n         <div class=\"mt-6 flex flex-col px-4 justify-center items-center\">\r\n-            <button class=\"font-inter font-bold text-xl text-white bg-hijauPrimary px-32 py-3 rounded-2xl\">\r\n+            <button class=\"font-inter font-bold text-xl border-black text-white bg-hijauPrimary px-32 py-3 rounded-2xl\">\r\n                 LOGIN\r\n             </button>\r\n             <p class=\"font-inter font-medium text-sm mt-3\">Belum Punya Akun? <a href=\"#\" class=\"text-intiHijau\">Daftar</a></p>\r\n         </div>\r\n"
+                },
+                {
+                    "date": 1715140645629,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -44,9 +44,9 @@\n         </div>\r\n \r\n         {{-- button --}}\r\n         <div class=\"mt-6 flex flex-col px-4 justify-center items-center\">\r\n-            <button class=\"font-inter font-bold text-xl border-black text-white bg-hijauPrimary px-32 py-3 rounded-2xl\">\r\n+            <button class=\"font-inter font-bold text-xl border-black border text-white bg-hijauPrimary px-32 py-3 rounded-2xl\">\r\n                 LOGIN\r\n             </button>\r\n             <p class=\"font-inter font-medium text-sm mt-3\">Belum Punya Akun? <a href=\"#\" class=\"text-intiHijau\">Daftar</a></p>\r\n         </div>\r\n"
+                },
+                {
+                    "date": 1715734144398,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,17 +1,5 @@\n-<!DOCTYPE html>\r\n-<html lang=\"en\">\r\n-<head>\r\n-    <meta charset=\"UTF-8\">\r\n-    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n-    <meta http-equiv=\"X-UA-Compatible\" content=\"ie=edge\">\r\n-    {{-- font --}}\r\n-    <link rel=\"preconnect\" href=\"https://fonts.googleapis.com\">\r\n-    <link rel=\"preconnect\" href=\"https://fonts.gstatic.com\" crossorigin>\r\n-    <link href=\"https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@100..900&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap\" rel=\"stylesheet\">\r\n-    @vite(['resources/css/app.css', 'resources/js/app.js'])\r\n-    <title>Login | SEKILAN</title>\r\n-</head>\r\n+\r\n <body>\r\n     <div>\r\n         {{-- logo --}}\r\n         <div class=\"w-full flex justify-center mt-20\">\r\n"
+                },
+                {
+                    "date": 1715734191380,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,5 @@\n-\r\n+<x-head></x-head>\r\n <body>\r\n     <div>\r\n         {{-- logo --}}\r\n         <div class=\"w-full flex justify-center mt-20\">\r\n"
+                },
+                {
+                    "date": 1715734880619,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n <x-head></x-head>\r\n-<body>\r\n+ \r\n     <div>\r\n         {{-- logo --}}\r\n         <div class=\"w-full flex justify-center mt-20\">\r\n             <img src=\"{{ asset('logo/mobil_sekilan.png') }}\" alt=\"logo-sekilan\" class=\"w-44\">\r\n@@ -39,6 +39,4 @@\n             <p class=\"font-inter font-medium text-sm mt-3\">Belum Punya Akun? <a href=\"#\" class=\"text-intiHijau\">Daftar</a></p>\r\n         </div>\r\n     </div>\r\n \r\n-</body>\r\n-</html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1715734905000,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -39,4 +39,6 @@\n             <p class=\"font-inter font-medium text-sm mt-3\">Belum Punya Akun? <a href=\"#\" class=\"text-intiHijau\">Daftar</a></p>\r\n         </div>\r\n     </div>\r\n \r\n+<x-foot></x-foot>\r\n+\r\n"
+                },
+                {
+                    "date": 1715736606154,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,8 +16,9 @@\n             <h2 class=\"font-poppins text-intiHijau font-bold text-xl\">Email</h2>\r\n         </div>\r\n         {{-- body form --}}\r\n         <div class=\"w-full px-4\">\r\n+            <i data-feather=\"mail\"></i>\r\n             <input type=\"email\" name=\"email\" id=\"email\" placeholder=\"masukkan email\" class=\"w-full placeholder:font-inter placeholder:font-light placeholder:text-sm focus:ring-0 focus:border-b-intiHijau border-x-0 border-t-0 outline-b-2 border-b-intiHijau\">\r\n         </div>\r\n         {{-- judul form --}}\r\n         <div class=\"mt-5 px-4\">\r\n"
+                },
+                {
+                    "date": 1715736652089,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,9 +15,9 @@\n         <div class=\"mt-10 px-4\">\r\n             <h2 class=\"font-poppins text-intiHijau font-bold text-xl\">Email</h2>\r\n         </div>\r\n         {{-- body form --}}\r\n-        <div class=\"w-full px-4\">\r\n+        <div class=\"w-full px-4 flex flex-row\">\r\n             <i data-feather=\"mail\"></i>\r\n             <input type=\"email\" name=\"email\" id=\"email\" placeholder=\"masukkan email\" class=\"w-full placeholder:font-inter placeholder:font-light placeholder:text-sm focus:ring-0 focus:border-b-intiHijau border-x-0 border-t-0 outline-b-2 border-b-intiHijau\">\r\n         </div>\r\n         {{-- judul form --}}\r\n"
+                },
+                {
+                    "date": 1715736679084,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,9 +16,9 @@\n             <h2 class=\"font-poppins text-intiHijau font-bold text-xl\">Email</h2>\r\n         </div>\r\n         {{-- body form --}}\r\n         <div class=\"w-full px-4 flex flex-row\">\r\n-            <i data-feather=\"mail\"></i>\r\n+            <i data-feather=\"mail\" class=\"bg-blue-500\"></i>\r\n             <input type=\"email\" name=\"email\" id=\"email\" placeholder=\"masukkan email\" class=\"w-full placeholder:font-inter placeholder:font-light placeholder:text-sm focus:ring-0 focus:border-b-intiHijau border-x-0 border-t-0 outline-b-2 border-b-intiHijau\">\r\n         </div>\r\n         {{-- judul form --}}\r\n         <div class=\"mt-5 px-4\">\r\n"
+                },
+                {
+                    "date": 1715736690018,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,9 +15,9 @@\n         <div class=\"mt-10 px-4\">\r\n             <h2 class=\"font-poppins text-intiHijau font-bold text-xl\">Email</h2>\r\n         </div>\r\n         {{-- body form --}}\r\n-        <div class=\"w-full px-4 flex flex-row\">\r\n+        <div class=\"w-full px-4 flex flex-row bg-red-500\">\r\n             <i data-feather=\"mail\" class=\"bg-blue-500\"></i>\r\n             <input type=\"email\" name=\"email\" id=\"email\" placeholder=\"masukkan email\" class=\"w-full placeholder:font-inter placeholder:font-light placeholder:text-sm focus:ring-0 focus:border-b-intiHijau border-x-0 border-t-0 outline-b-2 border-b-intiHijau\">\r\n         </div>\r\n         {{-- judul form --}}\r\n"
+                },
+                {
+                    "date": 1715736718832,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,9 +16,9 @@\n             <h2 class=\"font-poppins text-intiHijau font-bold text-xl\">Email</h2>\r\n         </div>\r\n         {{-- body form --}}\r\n         <div class=\"w-full px-4 flex flex-row bg-red-500\">\r\n-            <i data-feather=\"mail\" class=\"bg-blue-500\"></i>\r\n+            <i data-feather=\"mail\" class=\"bg-blue-500 text-base\"></i>\r\n             <input type=\"email\" name=\"email\" id=\"email\" placeholder=\"masukkan email\" class=\"w-full placeholder:font-inter placeholder:font-light placeholder:text-sm focus:ring-0 focus:border-b-intiHijau border-x-0 border-t-0 outline-b-2 border-b-intiHijau\">\r\n         </div>\r\n         {{-- judul form --}}\r\n         <div class=\"mt-5 px-4\">\r\n"
+                },
+                {
+                    "date": 1715736725255,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,9 +16,9 @@\n             <h2 class=\"font-poppins text-intiHijau font-bold text-xl\">Email</h2>\r\n         </div>\r\n         {{-- body form --}}\r\n         <div class=\"w-full px-4 flex flex-row bg-red-500\">\r\n-            <i data-feather=\"mail\" class=\"bg-blue-500 text-base\"></i>\r\n+            <i data-feather=\"mail\" class=\"bg-blue-500 text-lg\"></i>\r\n             <input type=\"email\" name=\"email\" id=\"email\" placeholder=\"masukkan email\" class=\"w-full placeholder:font-inter placeholder:font-light placeholder:text-sm focus:ring-0 focus:border-b-intiHijau border-x-0 border-t-0 outline-b-2 border-b-intiHijau\">\r\n         </div>\r\n         {{-- judul form --}}\r\n         <div class=\"mt-5 px-4\">\r\n"
+                },
+                {
+                    "date": 1715736735190,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,9 +16,9 @@\n             <h2 class=\"font-poppins text-intiHijau font-bold text-xl\">Email</h2>\r\n         </div>\r\n         {{-- body form --}}\r\n         <div class=\"w-full px-4 flex flex-row bg-red-500\">\r\n-            <i data-feather=\"mail\" class=\"bg-blue-500 text-lg\"></i>\r\n+            <i data-feather=\"mail\" class=\"bg-blue-500\"></i>\r\n             <input type=\"email\" name=\"email\" id=\"email\" placeholder=\"masukkan email\" class=\"w-full placeholder:font-inter placeholder:font-light placeholder:text-sm focus:ring-0 focus:border-b-intiHijau border-x-0 border-t-0 outline-b-2 border-b-intiHijau\">\r\n         </div>\r\n         {{-- judul form --}}\r\n         <div class=\"mt-5 px-4\">\r\n"
+                },
+                {
+                    "date": 1715736780886,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,9 +15,9 @@\n         <div class=\"mt-10 px-4\">\r\n             <h2 class=\"font-poppins text-intiHijau font-bold text-xl\">Email</h2>\r\n         </div>\r\n         {{-- body form --}}\r\n-        <div class=\"w-full px-4 flex flex-row bg-red-500\">\r\n+        <div class=\"w-full px-4 flex flex-row items-center bg-red-500\">\r\n             <i data-feather=\"mail\" class=\"bg-blue-500\"></i>\r\n             <input type=\"email\" name=\"email\" id=\"email\" placeholder=\"masukkan email\" class=\"w-full placeholder:font-inter placeholder:font-light placeholder:text-sm focus:ring-0 focus:border-b-intiHijau border-x-0 border-t-0 outline-b-2 border-b-intiHijau\">\r\n         </div>\r\n         {{-- judul form --}}\r\n"
+                },
+                {
+                    "date": 1715736802478,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,9 +16,9 @@\n             <h2 class=\"font-poppins text-intiHijau font-bold text-xl\">Email</h2>\r\n         </div>\r\n         {{-- body form --}}\r\n         <div class=\"w-full px-4 flex flex-row items-center bg-red-500\">\r\n-            <i data-feather=\"mail\" class=\"bg-blue-500\"></i>\r\n+            <i data-feather=\"mail\" class=\"bg-blue-500 text-2xl\"></i>\r\n             <input type=\"email\" name=\"email\" id=\"email\" placeholder=\"masukkan email\" class=\"w-full placeholder:font-inter placeholder:font-light placeholder:text-sm focus:ring-0 focus:border-b-intiHijau border-x-0 border-t-0 outline-b-2 border-b-intiHijau\">\r\n         </div>\r\n         {{-- judul form --}}\r\n         <div class=\"mt-5 px-4\">\r\n"
+                },
+                {
+                    "date": 1715736812157,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,9 +16,9 @@\n             <h2 class=\"font-poppins text-intiHijau font-bold text-xl\">Email</h2>\r\n         </div>\r\n         {{-- body form --}}\r\n         <div class=\"w-full px-4 flex flex-row items-center bg-red-500\">\r\n-            <i data-feather=\"mail\" class=\"bg-blue-500 text-2xl\"></i>\r\n+            <i data-feather=\"mail\" class=\"bg-blue-500 w-7\"></i>\r\n             <input type=\"email\" name=\"email\" id=\"email\" placeholder=\"masukkan email\" class=\"w-full placeholder:font-inter placeholder:font-light placeholder:text-sm focus:ring-0 focus:border-b-intiHijau border-x-0 border-t-0 outline-b-2 border-b-intiHijau\">\r\n         </div>\r\n         {{-- judul form --}}\r\n         <div class=\"mt-5 px-4\">\r\n"
+                },
+                {
+                    "date": 1715736818789,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,9 +16,9 @@\n             <h2 class=\"font-poppins text-intiHijau font-bold text-xl\">Email</h2>\r\n         </div>\r\n         {{-- body form --}}\r\n         <div class=\"w-full px-4 flex flex-row items-center bg-red-500\">\r\n-            <i data-feather=\"mail\" class=\"bg-blue-500 w-7\"></i>\r\n+            <i data-feather=\"mail\" class=\"bg-blue-500 w-12\"></i>\r\n             <input type=\"email\" name=\"email\" id=\"email\" placeholder=\"masukkan email\" class=\"w-full placeholder:font-inter placeholder:font-light placeholder:text-sm focus:ring-0 focus:border-b-intiHijau border-x-0 border-t-0 outline-b-2 border-b-intiHijau\">\r\n         </div>\r\n         {{-- judul form --}}\r\n         <div class=\"mt-5 px-4\">\r\n"
+                },
+                {
+                    "date": 1715736888335,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,9 +16,9 @@\n             <h2 class=\"font-poppins text-intiHijau font-bold text-xl\">Email</h2>\r\n         </div>\r\n         {{-- body form --}}\r\n         <div class=\"w-full px-4 flex flex-row items-center bg-red-500\">\r\n-            <i data-feather=\"mail\" class=\"bg-blue-500 w-12\"></i>\r\n+            <i data-feather=\"mail\" class=\"bg-blue-500 font-semibold\"></i>\r\n             <input type=\"email\" name=\"email\" id=\"email\" placeholder=\"masukkan email\" class=\"w-full placeholder:font-inter placeholder:font-light placeholder:text-sm focus:ring-0 focus:border-b-intiHijau border-x-0 border-t-0 outline-b-2 border-b-intiHijau\">\r\n         </div>\r\n         {{-- judul form --}}\r\n         <div class=\"mt-5 px-4\">\r\n"
+                },
+                {
+                    "date": 1715736894746,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,9 +16,9 @@\n             <h2 class=\"font-poppins text-intiHijau font-bold text-xl\">Email</h2>\r\n         </div>\r\n         {{-- body form --}}\r\n         <div class=\"w-full px-4 flex flex-row items-center bg-red-500\">\r\n-            <i data-feather=\"mail\" class=\"bg-blue-500 font-semibold\"></i>\r\n+            <i data-feather=\"mail\" class=\"bg-blue-500 \"></i>\r\n             <input type=\"email\" name=\"email\" id=\"email\" placeholder=\"masukkan email\" class=\"w-full placeholder:font-inter placeholder:font-light placeholder:text-sm focus:ring-0 focus:border-b-intiHijau border-x-0 border-t-0 outline-b-2 border-b-intiHijau\">\r\n         </div>\r\n         {{-- judul form --}}\r\n         <div class=\"mt-5 px-4\">\r\n"
+                },
+                {
+                    "date": 1715736907053,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,9 +15,9 @@\n         <div class=\"mt-10 px-4\">\r\n             <h2 class=\"font-poppins text-intiHijau font-bold text-xl\">Email</h2>\r\n         </div>\r\n         {{-- body form --}}\r\n-        <div class=\"w-full px-4 flex flex-row items-center bg-red-500\">\r\n+        <div class=\"w-full flex flex-row items-center bg-red-500\">\r\n             <i data-feather=\"mail\" class=\"bg-blue-500 \"></i>\r\n             <input type=\"email\" name=\"email\" id=\"email\" placeholder=\"masukkan email\" class=\"w-full placeholder:font-inter placeholder:font-light placeholder:text-sm focus:ring-0 focus:border-b-intiHijau border-x-0 border-t-0 outline-b-2 border-b-intiHijau\">\r\n         </div>\r\n         {{-- judul form --}}\r\n"
+                },
+                {
+                    "date": 1715736916711,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,9 +16,9 @@\n             <h2 class=\"font-poppins text-intiHijau font-bold text-xl\">Email</h2>\r\n         </div>\r\n         {{-- body form --}}\r\n         <div class=\"w-full flex flex-row items-center bg-red-500\">\r\n-            <i data-feather=\"mail\" class=\"bg-blue-500 \"></i>\r\n+            <i data-feather=\"mail\" class=\"bg-blue-500 text-5xl\"></i>\r\n             <input type=\"email\" name=\"email\" id=\"email\" placeholder=\"masukkan email\" class=\"w-full placeholder:font-inter placeholder:font-light placeholder:text-sm focus:ring-0 focus:border-b-intiHijau border-x-0 border-t-0 outline-b-2 border-b-intiHijau\">\r\n         </div>\r\n         {{-- judul form --}}\r\n         <div class=\"mt-5 px-4\">\r\n"
+                },
+                {
+                    "date": 1715736923027,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,10 +15,10 @@\n         <div class=\"mt-10 px-4\">\r\n             <h2 class=\"font-poppins text-intiHijau font-bold text-xl\">Email</h2>\r\n         </div>\r\n         {{-- body form --}}\r\n-        <div class=\"w-full flex flex-row items-center bg-red-500\">\r\n-            <i data-feather=\"mail\" class=\"bg-blue-500 text-5xl\"></i>\r\n+        <div class=\"w-full px-4 flex flex-row items-center bg-red-500\">\r\n+            <i data-feather=\"mail\" class=\"bg-blue-500 \"></i>\r\n             <input type=\"email\" name=\"email\" id=\"email\" placeholder=\"masukkan email\" class=\"w-full placeholder:font-inter placeholder:font-light placeholder:text-sm focus:ring-0 focus:border-b-intiHijau border-x-0 border-t-0 outline-b-2 border-b-intiHijau\">\r\n         </div>\r\n         {{-- judul form --}}\r\n         <div class=\"mt-5 px-4\">\r\n"
+                },
+                {
+                    "date": 1715736930886,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,9 +15,9 @@\n         <div class=\"mt-10 px-4\">\r\n             <h2 class=\"font-poppins text-intiHijau font-bold text-xl\">Email</h2>\r\n         </div>\r\n         {{-- body form --}}\r\n-        <div class=\"w-full px-4 flex flex-row items-center bg-red-500\">\r\n+        <div class=\"w-full px-4 flex flex-row items-center\">\r\n             <i data-feather=\"mail\" class=\"bg-blue-500 \"></i>\r\n             <input type=\"email\" name=\"email\" id=\"email\" placeholder=\"masukkan email\" class=\"w-full placeholder:font-inter placeholder:font-light placeholder:text-sm focus:ring-0 focus:border-b-intiHijau border-x-0 border-t-0 outline-b-2 border-b-intiHijau\">\r\n         </div>\r\n         {{-- judul form --}}\r\n"
+                },
+                {
+                    "date": 1715736938036,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,9 +16,9 @@\n             <h2 class=\"font-poppins text-intiHijau font-bold text-xl\">Email</h2>\r\n         </div>\r\n         {{-- body form --}}\r\n         <div class=\"w-full px-4 flex flex-row items-center\">\r\n-            <i data-feather=\"mail\" class=\"bg-blue-500 \"></i>\r\n+            <i data-feather=\"mail\" class=\"\"></i>\r\n             <input type=\"email\" name=\"email\" id=\"email\" placeholder=\"masukkan email\" class=\"w-full placeholder:font-inter placeholder:font-light placeholder:text-sm focus:ring-0 focus:border-b-intiHijau border-x-0 border-t-0 outline-b-2 border-b-intiHijau\">\r\n         </div>\r\n         {{-- judul form --}}\r\n         <div class=\"mt-5 px-4\">\r\n"
+                },
+                {
+                    "date": 1715736988468,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,8 +25,9 @@\n             <h2 class=\"font-poppins text-intiHijau font-bold text-xl\">Password</h2>\r\n         </div>\r\n         {{-- body form --}}\r\n         <div class=\"w-full px-4\">\r\n+            <i data-feather=\"lock\" class=\"\"></i>\r\n             <input type=\"password\" name=\"password\" id=\"password\" placeholder=\"masukkan password\" class=\"w-full placeholder:font-inter placeholder:font-light placeholder:text-sm focus:ring-0 focus:border-b-intiHijau border-x-0 border-t-0 outline-b-2 border-b-intiHijau\">\r\n         </div>\r\n         <div class=\"mt-2 pl-5\">\r\n             <a href=\"#\" class=\"font-inter font-medium text-sm text-intiHijau\">Lupa Password?</a>\r\n"
+                },
+                {
+                    "date": 1715736999208,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -24,9 +24,9 @@\n         <div class=\"mt-5 px-4\">\r\n             <h2 class=\"font-poppins text-intiHijau font-bold text-xl\">Password</h2>\r\n         </div>\r\n         {{-- body form --}}\r\n-        <div class=\"w-full px-4\">\r\n+        <div class=\"w-full px-4 flex flex-row items-center\">\r\n             <i data-feather=\"lock\" class=\"\"></i>\r\n             <input type=\"password\" name=\"password\" id=\"password\" placeholder=\"masukkan password\" class=\"w-full placeholder:font-inter placeholder:font-light placeholder:text-sm focus:ring-0 focus:border-b-intiHijau border-x-0 border-t-0 outline-b-2 border-b-intiHijau\">\r\n         </div>\r\n         <div class=\"mt-2 pl-5\">\r\n"
+                },
+                {
+                    "date": 1715737274449,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -37,9 +37,9 @@\n         <div class=\"mt-6 flex flex-col px-4 justify-center items-center\">\r\n             <button class=\"font-inter font-bold text-xl border-black border text-white bg-hijauPrimary px-32 py-3 rounded-2xl\">\r\n                 LOGIN\r\n             </button>\r\n-            <p class=\"font-inter font-medium text-sm mt-3\">Belum Punya Akun? <a href=\"#\" class=\"text-intiHijau\">Daftar</a></p>\r\n+            <p class=\"font-inter font-medium text-sm mt-3\">Belum Punya Akun? <a href=\"/register\" class=\"text-intiHijau\">Daftar</a></p>\r\n         </div>\r\n     </div>\r\n \r\n <x-foot></x-foot>\r\n"
+                },
+                {
+                    "date": 1715737351304,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -37,9 +37,9 @@\n         <div class=\"mt-6 flex flex-col px-4 justify-center items-center\">\r\n             <button class=\"font-inter font-bold text-xl border-black border text-white bg-hijauPrimary px-32 py-3 rounded-2xl\">\r\n                 LOGIN\r\n             </button>\r\n-            <p class=\"font-inter font-medium text-sm mt-3\">Belum Punya Akun? <a href=\"/register\" class=\"text-intiHijau\">Daftar</a></p>\r\n+            <p class=\"font-inter font-medium text-sm mt-3\">Belum Punya Akun? <a href=\"register\" class=\"text-intiHijau\">Daftar</a></p>\r\n         </div>\r\n     </div>\r\n \r\n <x-foot></x-foot>\r\n"
+                },
+                {
+                    "date": 1715737562878,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,11 +15,11 @@\n         <div class=\"mt-10 px-4\">\r\n             <h2 class=\"font-poppins text-intiHijau font-bold text-xl\">Email</h2>\r\n         </div>\r\n         {{-- body form --}}\r\n-        <div class=\"w-full px-4 flex flex-row items-center\">\r\n+        <div class=\"w-full px-4 flex flex-row items-center border-x-0 border-t-0 outline-b-2 border-b-intiHijau\">\r\n             <i data-feather=\"mail\" class=\"\"></i>\r\n-            <input type=\"email\" name=\"email\" id=\"email\" placeholder=\"masukkan email\" class=\"w-full placeholder:font-inter placeholder:font-light placeholder:text-sm focus:ring-0 focus:border-b-intiHijau border-x-0 border-t-0 outline-b-2 border-b-intiHijau\">\r\n+            <input type=\"email\" name=\"email\" id=\"email\" placeholder=\"masukkan email\" class=\"w-full placeholder:font-inter placeholder:font-light placeholder:text-sm focus:ring-0 focus:border-b-intiHijau \">\r\n         </div>\r\n         {{-- judul form --}}\r\n         <div class=\"mt-5 px-4\">\r\n             <h2 class=\"font-poppins text-intiHijau font-bold text-xl\">Password</h2>\r\n"
+                },
+                {
+                    "date": 1715737607464,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,9 +15,9 @@\n         <div class=\"mt-10 px-4\">\r\n             <h2 class=\"font-poppins text-intiHijau font-bold text-xl\">Email</h2>\r\n         </div>\r\n         {{-- body form --}}\r\n-        <div class=\"w-full px-4 flex flex-row items-center border-x-0 border-t-0 outline-b-2 border-b-intiHijau\">\r\n+        <div class=\"w-full px-4 flex flex-row items-center outline-b-2 border-b-intiHijau\">\r\n             <i data-feather=\"mail\" class=\"\"></i>\r\n             <input type=\"email\" name=\"email\" id=\"email\" placeholder=\"masukkan email\" class=\"w-full placeholder:font-inter placeholder:font-light placeholder:text-sm focus:ring-0 focus:border-b-intiHijau \">\r\n         </div>\r\n         {{-- judul form --}}\r\n"
+                },
+                {
+                    "date": 1715737627274,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,9 +15,9 @@\n         <div class=\"mt-10 px-4\">\r\n             <h2 class=\"font-poppins text-intiHijau font-bold text-xl\">Email</h2>\r\n         </div>\r\n         {{-- body form --}}\r\n-        <div class=\"w-full px-4 flex flex-row items-center outline-b-2 border-b-intiHijau\">\r\n+        <div class=\"w-full px-4 flex flex-row items-center outline-b-2\">\r\n             <i data-feather=\"mail\" class=\"\"></i>\r\n             <input type=\"email\" name=\"email\" id=\"email\" placeholder=\"masukkan email\" class=\"w-full placeholder:font-inter placeholder:font-light placeholder:text-sm focus:ring-0 focus:border-b-intiHijau \">\r\n         </div>\r\n         {{-- judul form --}}\r\n"
+                },
+                {
+                    "date": 1715737672917,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,9 +15,9 @@\n         <div class=\"mt-10 px-4\">\r\n             <h2 class=\"font-poppins text-intiHijau font-bold text-xl\">Email</h2>\r\n         </div>\r\n         {{-- body form --}}\r\n-        <div class=\"w-full px-4 flex flex-row items-center outline-b-2\">\r\n+        <div class=\"w-full px-4 flex flex-row items-center border-x-0 border-t-0 outline-b-2 border-b-intiHijau\">\r\n             <i data-feather=\"mail\" class=\"\"></i>\r\n             <input type=\"email\" name=\"email\" id=\"email\" placeholder=\"masukkan email\" class=\"w-full placeholder:font-inter placeholder:font-light placeholder:text-sm focus:ring-0 focus:border-b-intiHijau \">\r\n         </div>\r\n         {{-- judul form --}}\r\n"
+                },
+                {
+                    "date": 1715737691806,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,9 +17,9 @@\n         </div>\r\n         {{-- body form --}}\r\n         <div class=\"w-full px-4 flex flex-row items-center border-x-0 border-t-0 outline-b-2 border-b-intiHijau\">\r\n             <i data-feather=\"mail\" class=\"\"></i>\r\n-            <input type=\"email\" name=\"email\" id=\"email\" placeholder=\"masukkan email\" class=\"w-full placeholder:font-inter placeholder:font-light placeholder:text-sm focus:ring-0 focus:border-b-intiHijau \">\r\n+            <input type=\"email\" name=\"email\" id=\"email\" placeholder=\"masukkan email\" class=\"w-full placeholder:font-inter placeholder:font-light placeholder:text-sm focus:ring-0 focus:border-b-intiHijau border-x-0 border-t-0 outline-b-2 border-b-intiHijau\">\r\n         </div>\r\n         {{-- judul form --}}\r\n         <div class=\"mt-5 px-4\">\r\n             <h2 class=\"font-poppins text-intiHijau font-bold text-xl\">Password</h2>\r\n"
+                },
+                {
+                    "date": 1715737706713,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,9 +15,9 @@\n         <div class=\"mt-10 px-4\">\r\n             <h2 class=\"font-poppins text-intiHijau font-bold text-xl\">Email</h2>\r\n         </div>\r\n         {{-- body form --}}\r\n-        <div class=\"w-full px-4 flex flex-row items-center border-x-0 border-t-0 outline-b-2 border-b-intiHijau\">\r\n+        <div class=\"w-full px-4 flex flex-row items-center outline-b-2 border-b-intiHijau\">\r\n             <i data-feather=\"mail\" class=\"\"></i>\r\n             <input type=\"email\" name=\"email\" id=\"email\" placeholder=\"masukkan email\" class=\"w-full placeholder:font-inter placeholder:font-light placeholder:text-sm focus:ring-0 focus:border-b-intiHijau border-x-0 border-t-0 outline-b-2 border-b-intiHijau\">\r\n         </div>\r\n         {{-- judul form --}}\r\n"
+                },
+                {
+                    "date": 1715737751552,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,9 +17,9 @@\n         </div>\r\n         {{-- body form --}}\r\n         <div class=\"w-full px-4 flex flex-row items-center outline-b-2 border-b-intiHijau\">\r\n             <i data-feather=\"mail\" class=\"\"></i>\r\n-            <input type=\"email\" name=\"email\" id=\"email\" placeholder=\"masukkan email\" class=\"w-full placeholder:font-inter placeholder:font-light placeholder:text-sm focus:ring-0 focus:border-b-intiHijau border-x-0 border-t-0 outline-b-2 border-b-intiHijau\">\r\n+            <input type=\"email\" name=\"email\" id=\"email\" placeholder=\"masukkan email\" class=\"w-full placeholder:font-inter placeholder:font-light placeholder:text-sm focus:ring-0 focus:border-b-intiHijau border-x-0 border-t-0 \">\r\n         </div>\r\n         {{-- judul form --}}\r\n         <div class=\"mt-5 px-4\">\r\n             <h2 class=\"font-poppins text-intiHijau font-bold text-xl\">Password</h2>\r\n"
+                },
+                {
+                    "date": 1715737758540,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,9 +17,9 @@\n         </div>\r\n         {{-- body form --}}\r\n         <div class=\"w-full px-4 flex flex-row items-center outline-b-2 border-b-intiHijau\">\r\n             <i data-feather=\"mail\" class=\"\"></i>\r\n-            <input type=\"email\" name=\"email\" id=\"email\" placeholder=\"masukkan email\" class=\"w-full placeholder:font-inter placeholder:font-light placeholder:text-sm focus:ring-0 focus:border-b-intiHijau border-x-0 border-t-0 \">\r\n+            <input type=\"email\" name=\"email\" id=\"email\" placeholder=\"masukkan email\" class=\"w-full placeholder:font-inter placeholder:font-light placeholder:text-sm focus:ring-0 focus:border-b-intiHijau border-x-0 border-t-0 outline-b-2 border-b-intiHijau\">\r\n         </div>\r\n         {{-- judul form --}}\r\n         <div class=\"mt-5 px-4\">\r\n             <h2 class=\"font-poppins text-intiHijau font-bold text-xl\">Password</h2>\r\n"
+                },
+                {
+                    "date": 1715737775499,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,9 +15,9 @@\n         <div class=\"mt-10 px-4\">\r\n             <h2 class=\"font-poppins text-intiHijau font-bold text-xl\">Email</h2>\r\n         </div>\r\n         {{-- body form --}}\r\n-        <div class=\"w-full px-4 flex flex-row items-center outline-b-2 border-b-intiHijau\">\r\n+        <div class=\"w-full px-4 flex flex-row items-center\">\r\n             <i data-feather=\"mail\" class=\"\"></i>\r\n             <input type=\"email\" name=\"email\" id=\"email\" placeholder=\"masukkan email\" class=\"w-full placeholder:font-inter placeholder:font-light placeholder:text-sm focus:ring-0 focus:border-b-intiHijau border-x-0 border-t-0 outline-b-2 border-b-intiHijau\">\r\n         </div>\r\n         {{-- judul form --}}\r\n"
+                },
+                {
+                    "date": 1715742733930,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -29,9 +29,9 @@\n             <i data-feather=\"lock\" class=\"\"></i>\r\n             <input type=\"password\" name=\"password\" id=\"password\" placeholder=\"masukkan password\" class=\"w-full placeholder:font-inter placeholder:font-light placeholder:text-sm focus:ring-0 focus:border-b-intiHijau border-x-0 border-t-0 outline-b-2 border-b-intiHijau\">\r\n         </div>\r\n         <div class=\"mt-2 pl-5\">\r\n-            <a href=\"#\" class=\"font-inter font-medium text-sm text-intiHijau\">Lupa Password?</a>\r\n+            <a href=\"forgot-pw\" class=\"font-inter font-medium text-sm text-intiHijau\">Lupa Password?</a>\r\n         </div>\r\n \r\n         {{-- button --}}\r\n         <div class=\"mt-6 flex flex-col px-4 justify-center items-center\">\r\n"
+                }
+            ],
+            "date": 1715133488090,
+            "name": "Commit-0",
+            "content": "<!DOCTYPE html>\r\n<html lang=\"en\">\r\n<head>\r\n    <meta charset=\"UTF-8\">\r\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n    <meta http-equiv=\"X-UA-Compatible\" content=\"ie=edge\">\r\n    <title>Login | SEKILAN</title>\r\n</head>\r\n<body>\r\n    {{-- logo --}}\r\n    <div>\r\n        <div class=\"bg-white\">\r\n            <img src=\"{{ asset('logo/mobil_sekilan.png') }}\" alt=\"\" class=\"w-12\">\r\n          </div>\r\n    </div>\r\n</body>\r\n</html>"
+        }
+    ]
+}

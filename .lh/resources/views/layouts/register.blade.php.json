@@ -1,0 +1,18 @@
+{
+    "sourceFile": "resources/views/layouts/register.blade.php",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1715737118330,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1715737118330,
+            "name": "Commit-0",
+            "content": "<x-head></x-head>\r\n \r\n    <div>\r\n        {{-- logo --}}\r\n        <div class=\"w-full flex justify-center mt-20\">\r\n            <img src=\"{{ asset('logo/mobil_sekilan.png') }}\" alt=\"logo-sekilan\" class=\"w-44\">\r\n        </div>\r\n        {{-- nama --}}\r\n        <div class=\"w-full flex justify-center mt-1\">\r\n            <h1 class=\"font-poppins text-intiHijau font-semibold text-2xl\">SEKILAN</h1>\r\n        </div>\r\n\r\n        {{-- form --}}\r\n        {{-- judul form --}}\r\n        <div class=\"mt-10 px-4\">\r\n            <h2 class=\"font-poppins text-intiHijau font-bold text-xl\">Email</h2>\r\n        </div>\r\n        {{-- body form --}}\r\n        <div class=\"w-full px-4 flex flex-row items-center\">\r\n            <i data-feather=\"mail\" class=\"\"></i>\r\n            <input type=\"email\" name=\"email\" id=\"email\" placeholder=\"masukkan email\" class=\"w-full placeholder:font-inter placeholder:font-light placeholder:text-sm focus:ring-0 focus:border-b-intiHijau border-x-0 border-t-0 outline-b-2 border-b-intiHijau\">\r\n        </div>\r\n        {{-- judul form --}}\r\n        <div class=\"mt-5 px-4\">\r\n            <h2 class=\"font-poppins text-intiHijau font-bold text-xl\">Password</h2>\r\n        </div>\r\n        {{-- body form --}}\r\n        <div class=\"w-full px-4 flex flex-row items-center\">\r\n            <i data-feather=\"lock\" class=\"\"></i>\r\n            <input type=\"password\" name=\"password\" id=\"password\" placeholder=\"masukkan password\" class=\"w-full placeholder:font-inter placeholder:font-light placeholder:text-sm focus:ring-0 focus:border-b-intiHijau border-x-0 border-t-0 outline-b-2 border-b-intiHijau\">\r\n        </div>\r\n        <div class=\"mt-2 pl-5\">\r\n            <a href=\"#\" class=\"font-inter font-medium text-sm text-intiHijau\">Lupa Password?</a>\r\n        </div>\r\n\r\n        {{-- button --}}\r\n        <div class=\"mt-6 flex flex-col px-4 justify-center items-center\">\r\n            <button class=\"font-inter font-bold text-xl border-black border text-white bg-hijauPrimary px-32 py-3 rounded-2xl\">\r\n                LOGIN\r\n            </button>\r\n            <p class=\"font-inter font-medium text-sm mt-3\">Belum Punya Akun? <a href=\"#\" class=\"text-intiHijau\">Daftar</a></p>\r\n        </div>\r\n    </div>\r\n\r\n<x-foot></x-foot>\r\n\r\n"
+        }
+    ]
+}

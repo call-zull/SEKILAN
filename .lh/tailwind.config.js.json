@@ -1,0 +1,50 @@
+{
+    "sourceFile": "tailwind.config.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 8,
+            "patches": [
+                {
+                    "date": 1706750934095,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1706751779793,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,7 +7,9 @@\n   ],\n   theme: {\n     extend: {},\n   },\n-  plugins: [],\n+  plugins: [\n+    require('flowbite/plugin')\n+  ],\n }\n \n"
+                },
+                {
+                    "date": 1707398050101,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,9 +5,13 @@\n     \"./resources/**/*.js\",\n     \"./resources/**/*.vue\",\n   ],\n   theme: {\n-    extend: {},\n+    extend: {\n+      colors: {\n+        hijauPrimary: \"#2EB1AA\"\n+      },\n+    },\n   },\n   plugins: [\n     require('flowbite/plugin')\n   ],\n"
+                },
+                {
+                    "date": 1707398887532,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,8 +6,14 @@\n     \"./resources/**/*.vue\",\n   ],\n   theme: {\n     extend: {\n+      fontFamily: {\n+        inter: [\"inter\"],\n+        circular: [\"Circular STD\"],\n+        poppins: [\"Poppins\"],\n+        sans: [\"OpenSans\"]\n+      },\n       colors: {\n         hijauPrimary: \"#2EB1AA\"\n       },\n     },\n"
+                },
+                {
+                    "date": 1707399190478,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,12 +7,12 @@\n   ],\n   theme: {\n     extend: {\n       fontFamily: {\n-        inter: [\"inter\"],\n-        circular: [\"Circular STD\"],\n         poppins: [\"Poppins\"],\n-        sans: [\"OpenSans\"]\n+        sans: [\"OpenSans\"],\n+        kanit: [\"Kanit\"],\n+        bebas: [\"Bebas Neue\"],\n       },\n       colors: {\n         hijauPrimary: \"#2EB1AA\"\n       },\n"
+                },
+                {
+                    "date": 1715134666765,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,9 +13,10 @@\n         kanit: [\"Kanit\"],\n         bebas: [\"Bebas Neue\"],\n       },\n       colors: {\n-        hijauPrimary: \"#2EB1AA\"\n+        hijauPrimary: \"#2EB1AA\",\n+        intiHijau: \"07C1B6\",\n       },\n     },\n   },\n   plugins: [\n"
+                },
+                {
+                    "date": 1715134705362,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,9 +14,9 @@\n         bebas: [\"Bebas Neue\"],\n       },\n       colors: {\n         hijauPrimary: \"#2EB1AA\",\n-        intiHijau: \"07C1B6\",\n+        intiHijau: \"#07C1B6\",\n       },\n     },\n   },\n   plugins: [\n"
+                },
+                {
+                    "date": 1715137711140,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -21,6 +21,7 @@\n   },\n   plugins: [\n     require('flowbite/plugin')\n   ],\n+  important: true,\n }\n \n"
+                },
+                {
+                    "date": 1715138888736,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,8 +11,9 @@\n         poppins: [\"Poppins\"],\n         sans: [\"OpenSans\"],\n         kanit: [\"Kanit\"],\n         bebas: [\"Bebas Neue\"],\n+        inter: [\"Inter\"],\n       },\n       colors: {\n         hijauPrimary: \"#2EB1AA\",\n         intiHijau: \"#07C1B6\",\n"
+                }
+            ],
+            "date": 1706750934095,
+            "name": "Commit-0",
+            "content": "/** @type {import('tailwindcss').Config} */\nexport default {\n  content: [\n    \"./resources/**/*.blade.php\",\n    \"./resources/**/*.js\",\n    \"./resources/**/*.vue\",\n  ],\n  theme: {\n    extend: {},\n  },\n  plugins: [],\n}\n\n"
+        }
+    ]
+}

@@ -1,0 +1,126 @@
+{
+    "sourceFile": "resources/views/home.blade.php",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 27,
+            "patches": [
+                {
+                    "date": 1707381120724,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1707381662965,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,7 +7,48 @@\n     @vite(['resources/css/app.css', 'resources/js/app.js'])\r\n     <title>Sekilan | Home</title>\r\n </head>\r\n <body>\r\n+    <header class=\"bg-transparent absolute top-0 left-0 w-full flex items-center z-10\">\r\n+        <div class=\"container\">\r\n+          <div class=\"flex items-center justify-between relative\">\r\n+            <div class=\"px-4\">\r\n+              <a href=\"#home\" class=\"font-bold text-lg text-primary block py-6\">Zuldi</a>\r\n+            </div>\r\n+            <div class=\"flex items-center px-4\">\r\n+              <button id=\"hamburger\" name=\"hamburger\" type=\"button\" class=\"block absolute right-4 lg:hidden\">\r\n+                <span class=\"hamburger-line transition duration-300 ease-in-out origin-top-left\"></span>\r\n+                <span class=\"hamburger-line transition duration-300 ease-in-out\"></span>\r\n+                <span class=\"hamburger-line transition duration-300 ease-in-out origin-bottom-left\"></span>\r\n+              </button>\r\n+    \r\n+              <nav id=\"nav-menu\"\r\n+                class=\"hidden absolute py-5 bg-white shadow-lg rounded-lg max-w-[250px] w-full right-4 top-full lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none\">\r\n+                <ul class=\"block lg:flex\">\r\n+                  <li class=\"group\">\r\n+                    <a href=\"#home\" class=\"text-base text-dark py-2 mx-8 flex group-hover:text-primary\">Home</a>\r\n+                  </li>\r\n+                  <li class=\"group\">\r\n+                    <a href=\"#about\" class=\"text-base text-dark py-2 mx-8 flex group-hover:text-primary\">About Me</a>\r\n+                  </li>\r\n+                  <li class=\"group\">\r\n+                    <a href=\"#portfolio\" class=\"text-base text-dark py-2 mx-8 flex group-hover:text-primary\">Portfolio</a>\r\n+                  </li>\r\n+                  <li class=\"group\">\r\n+                    <a href=\"#clients\" class=\"text-base text-dark py-2 mx-8 flex group-hover:text-primary\">Clients</a>\r\n+                  </li>\r\n+                  <li class=\"group\">\r\n+                    <a href=\"#blog\" class=\"text-base  text-dark py-2 mx-8 flex group-hover:text-primary\">Blog</a>\r\n+                  </li>\r\n+                  <li class=\"group\">\r\n+                    <a href=\"#contact\" class=\"text-base text-dark py-2 mx-8 flex group-hover:text-primary\">Contact</a>\r\n+                  </li>\r\n+                </ul>\r\n+              </nav>\r\n+    \r\n+            </div>\r\n+          </div>\r\n+        </div>\r\n+      </header>\r\n     <h3 class=\"font-bold text-3xl\">Cek</h3>\r\n </body>\r\n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1707397884313,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,48 +7,7 @@\n     @vite(['resources/css/app.css', 'resources/js/app.js'])\r\n     <title>Sekilan | Home</title>\r\n </head>\r\n <body>\r\n-    <header class=\"bg-transparent absolute top-0 left-0 w-full flex items-center z-10\">\r\n-        <div class=\"container\">\r\n-          <div class=\"flex items-center justify-between relative\">\r\n-            <div class=\"px-4\">\r\n-              <a href=\"#home\" class=\"font-bold text-lg text-primary block py-6\">Zuldi</a>\r\n-            </div>\r\n-            <div class=\"flex items-center px-4\">\r\n-              <button id=\"hamburger\" name=\"hamburger\" type=\"button\" class=\"block absolute right-4 lg:hidden\">\r\n-                <span class=\"hamburger-line transition duration-300 ease-in-out origin-top-left\"></span>\r\n-                <span class=\"hamburger-line transition duration-300 ease-in-out\"></span>\r\n-                <span class=\"hamburger-line transition duration-300 ease-in-out origin-bottom-left\"></span>\r\n-              </button>\r\n-    \r\n-              <nav id=\"nav-menu\"\r\n-                class=\"hidden absolute py-5 bg-white shadow-lg rounded-lg max-w-[250px] w-full right-4 top-full lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none\">\r\n-                <ul class=\"block lg:flex\">\r\n-                  <li class=\"group\">\r\n-                    <a href=\"#home\" class=\"text-base text-dark py-2 mx-8 flex group-hover:text-primary\">Home</a>\r\n-                  </li>\r\n-                  <li class=\"group\">\r\n-                    <a href=\"#about\" class=\"text-base text-dark py-2 mx-8 flex group-hover:text-primary\">About Me</a>\r\n-                  </li>\r\n-                  <li class=\"group\">\r\n-                    <a href=\"#portfolio\" class=\"text-base text-dark py-2 mx-8 flex group-hover:text-primary\">Portfolio</a>\r\n-                  </li>\r\n-                  <li class=\"group\">\r\n-                    <a href=\"#clients\" class=\"text-base text-dark py-2 mx-8 flex group-hover:text-primary\">Clients</a>\r\n-                  </li>\r\n-                  <li class=\"group\">\r\n-                    <a href=\"#blog\" class=\"text-base  text-dark py-2 mx-8 flex group-hover:text-primary\">Blog</a>\r\n-                  </li>\r\n-                  <li class=\"group\">\r\n-                    <a href=\"#contact\" class=\"text-base text-dark py-2 mx-8 flex group-hover:text-primary\">Contact</a>\r\n-                  </li>\r\n-                </ul>\r\n-              </nav>\r\n-    \r\n-            </div>\r\n-          </div>\r\n-        </div>\r\n-      </header>\r\n     <h3 class=\"font-bold text-3xl\">Cek</h3>\r\n </body>\r\n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1707398057586,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,7 +7,7 @@\n     @vite(['resources/css/app.css', 'resources/js/app.js'])\r\n     <title>Sekilan | Home</title>\r\n </head>\r\n <body>\r\n-    <h3 class=\"font-bold text-3xl\">Cek</h3>\r\n+    <h3 class=\"font-bold text-3xl text-hijauPrimary\">Cek</h3>\r\n </body>\r\n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1707399117563,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,13 +1,22 @@\n <!DOCTYPE html>\r\n <html lang=\"en\">\r\n+\r\n <head>\r\n     <meta charset=\"UTF-8\">\r\n     <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n     <meta http-equiv=\"X-UA-Compatible\" content=\"ie=edge\">\r\n+    {{-- font --}}\r\n+    <link rel=\"preconnect\" href=\"https://fonts.googleapis.com\">\r\n+    <link rel=\"preconnect\" href=\"https://fonts.gstatic.com\" crossorigin>\r\n+    <link\r\n+        href=\"https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap\"\r\n+        rel=\"stylesheet\">\r\n\\ No newline at end of file\n     @vite(['resources/css/app.css', 'resources/js/app.js'])\r\n     <title>Sekilan | Home</title>\r\n </head>\r\n+\r\n <body>\r\n     <h3 class=\"font-bold text-3xl text-hijauPrimary\">Cek</h3>\r\n </body>\r\n-</html>\n+\r\n+</html>\r\n"
+                },
+                {
+                    "date": 1707399195403,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,5 +18,5 @@\n <body>\r\n     <h3 class=\"font-bold text-3xl text-hijauPrimary\">Cek</h3>\r\n </body>\r\n \r\n-</html>\n\\ No newline at end of file\n+</html>\r\n"
+                },
+                {
+                    "date": 1707399206348,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,8 +15,8 @@\n     <title>Sekilan | Home</title>\r\n </head>\r\n \r\n <body>\r\n-    <h3 class=\"font-bold text-3xl text-hijauPrimary\">Cek</h3>\r\n+    <h3 class=\"font-bold text-3xl font-poppins text-hijauPrimary\">Cek</h3>\r\n </body>\r\n \r\n </html>\r\n"
+                },
+                {
+                    "date": 1707399230088,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,7 +16,10 @@\n </head>\r\n \r\n <body>\r\n     <h3 class=\"font-bold text-3xl font-poppins text-hijauPrimary\">Cek</h3>\r\n+    <h3 class=\"font-bold text-3xl font-kanit text-hijauPrimary\">Cek</h3>\r\n+    <h3 class=\"font-bold text-3xl font-sans text-hijauPrimary\">Cek</h3>\r\n+    <h3 class=\"font-bold text-3xl font-bebas text-hijauPrimary\">Cek</h3>\r\n </body>\r\n \r\n </html>\r\n"
+                },
+                {
+                    "date": 1707399846560,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,9 +14,11 @@\n     @vite(['resources/css/app.css', 'resources/js/app.js'])\r\n     <title>Sekilan | Home</title>\r\n </head>\r\n \r\n-<body>\r\n+<body class=\"scroll-smooth\">\r\n+\r\n+\r\n     <h3 class=\"font-bold text-3xl font-poppins text-hijauPrimary\">Cek</h3>\r\n     <h3 class=\"font-bold text-3xl font-kanit text-hijauPrimary\">Cek</h3>\r\n     <h3 class=\"font-bold text-3xl font-sans text-hijauPrimary\">Cek</h3>\r\n     <h3 class=\"font-bold text-3xl font-bebas text-hijauPrimary\">Cek</h3>\r\n"
+                },
+                {
+                    "date": 1707399878425,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,10 +14,12 @@\n     @vite(['resources/css/app.css', 'resources/js/app.js'])\r\n     <title>Sekilan | Home</title>\r\n </head>\r\n \r\n-<body class=\"scroll-smooth\">\r\n+<body class=\"scroll-smooth w-full h-full\">\r\n+    <div class=\"bg-hijauPrimary\">\r\n \r\n+    </div>\r\n \r\n     <h3 class=\"font-bold text-3xl font-poppins text-hijauPrimary\">Cek</h3>\r\n     <h3 class=\"font-bold text-3xl font-kanit text-hijauPrimary\">Cek</h3>\r\n     <h3 class=\"font-bold text-3xl font-sans text-hijauPrimary\">Cek</h3>\r\n"
+                },
+                {
+                    "date": 1707399886494,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,9 +15,9 @@\n     <title>Sekilan | Home</title>\r\n </head>\r\n \r\n <body class=\"scroll-smooth w-full h-full\">\r\n-    <div class=\"bg-hijauPrimary\">\r\n+    <div class=\"bg-hijauPrimary w-full p-3\">\r\n \r\n     </div>\r\n \r\n     <h3 class=\"font-bold text-3xl font-poppins text-hijauPrimary\">Cek</h3>\r\n"
+                },
+                {
+                    "date": 1707400117421,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,9 +16,9 @@\n </head>\r\n \r\n <body class=\"scroll-smooth w-full h-full\">\r\n     <div class=\"bg-hijauPrimary w-full p-3\">\r\n-\r\n+      <img src=\"{{ asset('logo/logo_mobil.jpg') }}\" alt=\"\">\r\n     </div>\r\n \r\n     <h3 class=\"font-bold text-3xl font-poppins text-hijauPrimary\">Cek</h3>\r\n     <h3 class=\"font-bold text-3xl font-kanit text-hijauPrimary\">Cek</h3>\r\n"
+                },
+                {
+                    "date": 1707400379527,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,9 +16,9 @@\n </head>\r\n \r\n <body class=\"scroll-smooth w-full h-full\">\r\n     <div class=\"bg-hijauPrimary w-full p-3\">\r\n-      <img src=\"{{ asset('logo/logo_mobil.jpg') }}\" alt=\"\">\r\n+      <img src=\"{{ asset('logo/mobil_sekilan.png') }}\" alt=\"\">\r\n     </div>\r\n \r\n     <h3 class=\"font-bold text-3xl font-poppins text-hijauPrimary\">Cek</h3>\r\n     <h3 class=\"font-bold text-3xl font-kanit text-hijauPrimary\">Cek</h3>\r\n"
+                },
+                {
+                    "date": 1707400406633,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,10 +16,12 @@\n </head>\r\n \r\n <body class=\"scroll-smooth w-full h-full\">\r\n     <div class=\"bg-hijauPrimary w-full p-3\">\r\n+      <div>\r\n       <img src=\"{{ asset('logo/mobil_sekilan.png') }}\" alt=\"\">\r\n     </div>\r\n+    </div>\r\n \r\n     <h3 class=\"font-bold text-3xl font-poppins text-hijauPrimary\">Cek</h3>\r\n     <h3 class=\"font-bold text-3xl font-kanit text-hijauPrimary\">Cek</h3>\r\n     <h3 class=\"font-bold text-3xl font-sans text-hijauPrimary\">Cek</h3>\r\n"
+                },
+                {
+                    "date": 1707400417339,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,9 +16,9 @@\n </head>\r\n \r\n <body class=\"scroll-smooth w-full h-full\">\r\n     <div class=\"bg-hijauPrimary w-full p-3\">\r\n-      <div>\r\n+      <div class=\"bg-white p-2\">\r\n       <img src=\"{{ asset('logo/mobil_sekilan.png') }}\" alt=\"\">\r\n     </div>\r\n     </div>\r\n \r\n"
+                },
+                {
+                    "date": 1707400436903,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,9 +15,9 @@\n     <title>Sekilan | Home</title>\r\n </head>\r\n \r\n <body class=\"scroll-smooth w-full h-full\">\r\n-    <div class=\"bg-hijauPrimary w-full p-3\">\r\n+    <div class=\"bg-hijauPrimary h-auto w-full p-3\">\r\n       <div class=\"bg-white p-2\">\r\n       <img src=\"{{ asset('logo/mobil_sekilan.png') }}\" alt=\"\">\r\n     </div>\r\n     </div>\r\n"
+                },
+                {
+                    "date": 1707400449165,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,9 +16,9 @@\n </head>\r\n \r\n <body class=\"scroll-smooth w-full h-full\">\r\n     <div class=\"bg-hijauPrimary h-auto w-full p-3\">\r\n-      <div class=\"bg-white p-2\">\r\n+      <div class=\"bg-white w-auto p-2\">\r\n       <img src=\"{{ asset('logo/mobil_sekilan.png') }}\" alt=\"\">\r\n     </div>\r\n     </div>\r\n \r\n"
+                },
+                {
+                    "date": 1707400464614,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,11 +17,11 @@\n \r\n <body class=\"scroll-smooth w-full h-full\">\r\n     <div class=\"bg-hijauPrimary h-auto w-full p-3\">\r\n       <div class=\"bg-white w-auto p-2\">\r\n-      <img src=\"{{ asset('logo/mobil_sekilan.png') }}\" alt=\"\">\r\n+        <img src=\"{{ asset('logo/mobil_sekilan.png') }}\" alt=\"\">\r\n+      </div>\r\n     </div>\r\n-    </div>\r\n \r\n     <h3 class=\"font-bold text-3xl font-poppins text-hijauPrimary\">Cek</h3>\r\n     <h3 class=\"font-bold text-3xl font-kanit text-hijauPrimary\">Cek</h3>\r\n     <h3 class=\"font-bold text-3xl font-sans text-hijauPrimary\">Cek</h3>\r\n"
+                },
+                {
+                    "date": 1707400476682,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,9 +16,9 @@\n </head>\r\n \r\n <body class=\"scroll-smooth w-full h-full\">\r\n     <div class=\"bg-hijauPrimary h-auto w-full p-3\">\r\n-      <div class=\"bg-white w-auto p-2\">\r\n+      <div class=\"bg-white w-20 p-2\">\r\n         <img src=\"{{ asset('logo/mobil_sekilan.png') }}\" alt=\"\">\r\n       </div>\r\n     </div>\r\n \r\n"
+                },
+                {
+                    "date": 1707400485427,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,9 +16,9 @@\n </head>\r\n \r\n <body class=\"scroll-smooth w-full h-full\">\r\n     <div class=\"bg-hijauPrimary h-auto w-full p-3\">\r\n-      <div class=\"bg-white w-20 p-2\">\r\n+      <div class=\"bg-white w-20\">\r\n         <img src=\"{{ asset('logo/mobil_sekilan.png') }}\" alt=\"\">\r\n       </div>\r\n     </div>\r\n \r\n"
+                },
+                {
+                    "date": 1707400494955,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,9 +16,9 @@\n </head>\r\n \r\n <body class=\"scroll-smooth w-full h-full\">\r\n     <div class=\"bg-hijauPrimary h-auto w-full p-3\">\r\n-      <div class=\"bg-white w-20\">\r\n+      <div class=\"bg-white\">\r\n         <img src=\"{{ asset('logo/mobil_sekilan.png') }}\" alt=\"\">\r\n       </div>\r\n     </div>\r\n \r\n"
+                },
+                {
+                    "date": 1707400578596,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,9 +17,9 @@\n \r\n <body class=\"scroll-smooth w-full h-full\">\r\n     <div class=\"bg-hijauPrimary h-auto w-full p-3\">\r\n       <div class=\"bg-white\">\r\n-        <img src=\"{{ asset('logo/mobil_sekilan.png') }}\" alt=\"\">\r\n+        <img src=\"{{ asset('logo/mobil_sekilan.png') }}\" alt=\"\" class=\"\">\r\n       </div>\r\n     </div>\r\n \r\n     <h3 class=\"font-bold text-3xl font-poppins text-hijauPrimary\">Cek</h3>\r\n"
+                },
+                {
+                    "date": 1707400601966,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,10 +15,10 @@\n     <title>Sekilan | Home</title>\r\n </head>\r\n \r\n <body class=\"scroll-smooth w-full h-full\">\r\n-    <div class=\"bg-hijauPrimary h-auto w-full p-3\">\r\n-      <div class=\"bg-white\">\r\n+    <div class=\"bg-hijauPrimary p-3\">\r\n+      <div class=\"bg-white p-2\">\r\n         <img src=\"{{ asset('logo/mobil_sekilan.png') }}\" alt=\"\" class=\"\">\r\n       </div>\r\n     </div>\r\n \r\n"
+                },
+                {
+                    "date": 1707400641027,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,10 +15,10 @@\n     <title>Sekilan | Home</title>\r\n </head>\r\n \r\n <body class=\"scroll-smooth w-full h-full\">\r\n-    <div class=\"bg-hijauPrimary p-3\">\r\n-      <div class=\"bg-white p-2\">\r\n+    <div class=\"bg-hijauPrimary\">\r\n+      <div class=\"bg-white\">\r\n         <img src=\"{{ asset('logo/mobil_sekilan.png') }}\" alt=\"\" class=\"\">\r\n       </div>\r\n     </div>\r\n \r\n"
+                },
+                {
+                    "date": 1707400655449,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,9 +17,9 @@\n \r\n <body class=\"scroll-smooth w-full h-full\">\r\n     <div class=\"bg-hijauPrimary\">\r\n       <div class=\"bg-white\">\r\n-        <img src=\"{{ asset('logo/mobil_sekilan.png') }}\" alt=\"\" class=\"\">\r\n+        <img src=\"{{ asset('logo/mobil_sekilan.png') }}\" alt=\"\" class=\"w-12\">\r\n       </div>\r\n     </div>\r\n \r\n     <h3 class=\"font-bold text-3xl font-poppins text-hijauPrimary\">Cek</h3>\r\n"
+                },
+                {
+                    "date": 1707400678718,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,9 +15,9 @@\n     <title>Sekilan | Home</title>\r\n </head>\r\n \r\n <body class=\"scroll-smooth w-full h-full\">\r\n-    <div class=\"bg-hijauPrimary\">\r\n+    <div class=\"bg-hijauPrimary w-full p-2\">\r\n       <div class=\"bg-white\">\r\n         <img src=\"{{ asset('logo/mobil_sekilan.png') }}\" alt=\"\" class=\"w-12\">\r\n       </div>\r\n     </div>\r\n"
+                },
+                {
+                    "date": 1715138803414,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,11 +7,9 @@\n     <meta http-equiv=\"X-UA-Compatible\" content=\"ie=edge\">\r\n     {{-- font --}}\r\n     <link rel=\"preconnect\" href=\"https://fonts.googleapis.com\">\r\n     <link rel=\"preconnect\" href=\"https://fonts.gstatic.com\" crossorigin>\r\n-    <link\r\n-        href=\"https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap\"\r\n-        rel=\"stylesheet\">\r\n+    <link href=\"https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@100..900&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap\" rel=\"stylesheet\">\r\n     @vite(['resources/css/app.css', 'resources/js/app.js'])\r\n     <title>Sekilan | Home</title>\r\n </head>\r\n \r\n"
+                },
+                {
+                    "date": 1715734524467,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,19 +1,6 @@\n-<!DOCTYPE html>\r\n-<html lang=\"en\">\r\n+<x-head></x-head>\r\n \r\n-<head>\r\n-    <meta charset=\"UTF-8\">\r\n-    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n-    <meta http-equiv=\"X-UA-Compatible\" content=\"ie=edge\">\r\n-    {{-- font --}}\r\n-    <link rel=\"preconnect\" href=\"https://fonts.googleapis.com\">\r\n-    <link rel=\"preconnect\" href=\"https://fonts.gstatic.com\" crossorigin>\r\n-    <link href=\"https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@100..900&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap\" rel=\"stylesheet\">\r\n-    @vite(['resources/css/app.css', 'resources/js/app.js'])\r\n-    <title>Sekilan | Home</title>\r\n-</head>\r\n-\r\n <body class=\"scroll-smooth w-full h-full\">\r\n     <div class=\"bg-hijauPrimary w-full p-2\">\r\n       <div class=\"bg-white\">\r\n         <img src=\"{{ asset('logo/mobil_sekilan.png') }}\" alt=\"\" class=\"w-12\">\r\n"
+                }
+            ],
+            "date": 1707381120723,
+            "name": "Commit-0",
+            "content": "<!DOCTYPE html>\r\n<html lang=\"en\">\r\n<head>\r\n    <meta charset=\"UTF-8\">\r\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n    <meta http-equiv=\"X-UA-Compatible\" content=\"ie=edge\">\r\n    @vite(['resources/css/app.css', 'resources/js/app.js'])\r\n    <title>Sekilan | Home</title>\r\n</head>\r\n<body>\r\n    <h3 class=\"font-bold text-3xl\">Cek</h3>\r\n</body>\r\n</html>"
+        }
+    ]
+}

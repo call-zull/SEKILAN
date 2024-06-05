@@ -1,0 +1,82 @@
+{
+    "sourceFile": "routes/web.php",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 16,
+            "patches": [
+                {
+                    "date": 1706751058169,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1707126686828,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,5 +14,7 @@\n */\n \n Route::get('/', function () {\n     return view('tes');\n-});\n\\ No newline at end of file\n+});\n+\n+Route::view('/welcome', 'welcome');\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1707381147440,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,9 +12,10 @@\n | be assigned to the \"web\" middleware group. Make something great!\n |\n */\n \n-Route::get('/', function () {\n+Route::get('/tes', function () {\n     return view('tes');\n });\n \n\\ No newline at end of file\n-Route::view('/welcome', 'welcome');\n+Route::view('/welcome', 'welcome');\n+Route::view('/', 'home');\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1715133556360,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,5 +17,6 @@\n     return view('tes');\n });\n \n Route::view('/welcome', 'welcome');\n-Route::view('/', 'home');\n\\ No newline at end of file\n+Route::view('/', 'home');\n+Route::view('/login', 'login');\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1715737244741,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,5 +18,6 @@\n });\n \n Route::view('/welcome', 'welcome');\n Route::view('/', 'home');\n-Route::view('/login', 'login');\n\\ No newline at end of file\n+Route::view('/login', 'login');\n+Route::view('/register', 'register');\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1715742720198,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,5 +19,6 @@\n \n Route::view('/welcome', 'welcome');\n Route::view('/', 'home');\n Route::view('/login', 'login');\n-Route::view('/register', 'register');\n\\ No newline at end of file\n+Route::view('/register', 'register');\n+Route::view('/forgot-pw', 'fprgot');\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1715742790644,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,5 +20,5 @@\n Route::view('/welcome', 'welcome');\n Route::view('/', 'home');\n Route::view('/login', 'login');\n Route::view('/register', 'register');\n-Route::view('/forgot-pw', 'fprgot');\n\\ No newline at end of file\n+Route::view('/forgot-pw', 'forgot');\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1716342541022,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,7 @@\n <?php\n \n+use App\\Http\\Controllers\\LoginController;\n use Illuminate\\Support\\Facades\\Route;\n \n /*\n |--------------------------------------------------------------------------\n@@ -18,7 +19,7 @@\n });\n \n Route::view('/welcome', 'welcome');\n Route::view('/', 'home');\n-Route::view('/login', 'login');\n+Route::view('/login', 'LoginController@index');\n Route::view('/register', 'register');\n Route::view('/forgot-pw', 'forgot');\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1716342569333,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,7 +19,7 @@\n });\n \n Route::view('/welcome', 'welcome');\n Route::view('/', 'home');\n-Route::view('/login', 'LoginController@index');\n+Route::view('/login', [LoginController::class, index]);\n Route::view('/register', 'register');\n Route::view('/forgot-pw', 'forgot');\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1716342756489,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,7 +19,7 @@\n });\n \n Route::view('/welcome', 'welcome');\n Route::view('/', 'home');\n-Route::view('/login', [LoginController::class, index]);\n+Route::get('/login', [LoginController::class, index]);\n Route::view('/register', 'register');\n Route::view('/forgot-pw', 'forgot');\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1716342886023,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,7 +19,7 @@\n });\n \n Route::view('/welcome', 'welcome');\n Route::view('/', 'home');\n-Route::get('/login', [LoginController::class, index]);\n+Route::get('/login', [LoginController::class, 'index']);\n Route::view('/register', 'register');\n Route::view('/forgot-pw', 'forgot');\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1716342929634,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,7 +19,7 @@\n });\n \n Route::view('/welcome', 'welcome');\n Route::view('/', 'home');\n-Route::get('/login', [LoginController::class, 'index']);\n+Route::get('/login', 'LoginController@index');\n Route::view('/register', 'register');\n Route::view('/forgot-pw', 'forgot');\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1716343004825,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,7 +19,7 @@\n });\n \n Route::view('/welcome', 'welcome');\n Route::view('/', 'home');\n-Route::get('/login', 'LoginController@index');\n+Route::get('/login', [LoginController::class, 'index']);\n Route::view('/register', 'register');\n Route::view('/forgot-pw', 'forgot');\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1716343185824,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,6 +20,14 @@\n \n Route::view('/welcome', 'welcome');\n Route::view('/', 'home');\n Route::get('/login', [LoginController::class, 'index']);\n-Route::view('/register', 'register');\n+\n+\n+Route::get('/register', [RegisterController::class, 'index']);\n+\n+\n+Route::get('/register', [RegisterController::class, 'index']);\n+\n+Route::get('/register', [ForgotController::class, 'index']);\n+\n Route::view('/forgot-pw', 'forgot');\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1716344379391,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,21 +13,15 @@\n | be assigned to the \"web\" middleware group. Make something great!\n |\n */\n \n-Route::get('/tes', function () {\n-    return view('tes');\n-});\n \n-Route::view('/welcome', 'welcome');\n-Route::view('/', 'home');\n-Route::get('/login', [LoginController::class, 'index']);\n+Route::get('/', [HomeController::class, 'index']);\n \n \n-Route::get('/register', [RegisterController::class, 'index']);\n+Route::get('/login', [LoginController::class, 'index']);\n \n \n Route::get('/register', [RegisterController::class, 'index']);\n \n-Route::get('/register', [ForgotController::class, 'index']);\n\\ No newline at end of file\n \n-Route::view('/forgot-pw', 'forgot');\n+Route::get('/register', [ForgotController::class, 'index']);\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1716344648435,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,11 @@\n <?php\n \n+use Illuminate\\Support\\Facades\\Route;\n+use App\\Http\\Controllers\\HomeController;\n use App\\Http\\Controllers\\LoginController;\n-use Illuminate\\Support\\Facades\\Route;\n+use App\\Http\\Controllers\\ForgotController;\n+use App\\Http\\Controllers\\RegisterController;\n \n /*\n |--------------------------------------------------------------------------\n | Web Routes\n"
+                },
+                {
+                    "date": 1716344807187,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -26,5 +26,5 @@\n \n Route::get('/register', [RegisterController::class, 'index']);\n \n \n-Route::get('/register', [ForgotController::class, 'index']);\n\\ No newline at end of file\n+Route::get('/forgot-pw', [ForgotController::class, 'index']);\n\\ No newline at end of file\n"
+                }
+            ],
+            "date": 1706751058169,
+            "name": "Commit-0",
+            "content": "<?php\n\nuse Illuminate\\Support\\Facades\\Route;\n\n/*\n|--------------------------------------------------------------------------\n| Web Routes\n|--------------------------------------------------------------------------\n|\n| Here is where you can register web routes for your application. These\n| routes are loaded by the RouteServiceProvider and all of them will\n| be assigned to the \"web\" middleware group. Make something great!\n|\n*/\n\nRoute::get('/', function () {\n    return view('tes');\n});"
+        }
+    ]
+}
