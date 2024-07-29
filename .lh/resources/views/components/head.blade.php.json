@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 2,
+            "activePatchIndex": 4,
             "patches": [
                 {
                     "date": 1715734149614,
@@ -16,6 +16,14 @@
                 {
                     "date": 1715736542323,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,7 +8,8 @@\n     <link rel=\"preconnect\" href=\"https://fonts.googleapis.com\">\n     <link rel=\"preconnect\" href=\"https://fonts.gstatic.com\" crossorigin>\n     <link href=\"https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@100..900&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap\" rel=\"stylesheet\">\n     @vite(['resources/css/app.css', 'resources/js/app.js'])\n+    <script src=\"https://unpkg.com/feather-icons\"></script>\n     <title>Login | SEKILAN</title>\n </head>\n <body>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1719410814315,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,5 +11,5 @@\n     @vite(['resources/css/app.css', 'resources/js/app.js'])\n     <script src=\"https://unpkg.com/feather-icons\"></script>\n     <title>Login | SEKILAN</title>\n </head>\n-<body>\n\\ No newline at end of file\n+<body class=\"h-full\">\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1719410866083,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,5 +11,5 @@\n     @vite(['resources/css/app.css', 'resources/js/app.js'])\n     <script src=\"https://unpkg.com/feather-icons\"></script>\n     <title>Login | SEKILAN</title>\n </head>\n-<body class=\"h-full\">\n\\ No newline at end of file\n+<body class=\"h-full w-full\">\n\\ No newline at end of file\n"
                 }
             ],
             "date": 1715734149614,

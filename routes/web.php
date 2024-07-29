@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\ResetPwController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\LoginController;
@@ -28,3 +29,5 @@ Route::get('/register', [RegisterController::class, 'index']);
 
 
 Route::get('/forgot-pw', [ForgotController::class, 'index']);
+
+Route::get('/reset-pw', [ResetPwController::class, 'index']);

@@ -12,4 +12,4 @@
     <script src="https://unpkg.com/feather-icons"></script>
     <title>Login | SEKILAN</title>
 </head>
-<body>
+<body class="h-full w-full scroll-smooth">

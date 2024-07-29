@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 16,
+            "activePatchIndex": 18,
             "patches": [
                 {
                     "date": 1706751058169,
@@ -72,6 +72,14 @@
                 {
                     "date": 1716344807187,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -26,5 +26,5 @@\n \n Route::get('/register', [RegisterController::class, 'index']);\n \n \n-Route::get('/register', [ForgotController::class, 'index']);\n\\ No newline at end of file\n+Route::get('/forgot-pw', [ForgotController::class, 'index']);\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1719409725599,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -26,5 +26,7 @@\n \n Route::get('/register', [RegisterController::class, 'index']);\n \n \n-Route::get('/forgot-pw', [ForgotController::class, 'index']);\n\\ No newline at end of file\n+Route::get('/forgot-pw', [ForgotController::class, 'index']);\n+\n+Route::get('/reset-pw', [ForgotController::class, 'index']);\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1719409826578,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,7 @@\n <?php\n \n+use App\\Http\\Controllers\\ResetPwController;\n use Illuminate\\Support\\Facades\\Route;\n use App\\Http\\Controllers\\HomeController;\n use App\\Http\\Controllers\\LoginController;\n use App\\Http\\Controllers\\ForgotController;\n@@ -28,5 +29,5 @@\n \n \n Route::get('/forgot-pw', [ForgotController::class, 'index']);\n \n-Route::get('/reset-pw', [ForgotController::class, 'index']);\n\\ No newline at end of file\n+Route::get('/reset-pw', [ResetPwController::class, 'index']);\n\\ No newline at end of file\n"
                 }
             ],
             "date": 1706751058169,
